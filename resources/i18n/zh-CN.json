@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "退出",
+      "PROFILE-SETTINGS": "个人档案设置",
+      "ABOUT": "关于",
+      "LANGUAGES": "语言"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "版本：",
+      "LICENSE": {
+        "TITLE": "许可证",
+        "PROPERTY": "属性",
+        "VALUE": "值"
+      },
+      "STATUS": {
+        "TITLE": "状态",
+        "PROPERTY": "属性",
+        "VALUE": "值"
+      },
+      "PACKAGES": {
+        "TITLE": "软件包",
+        "NAME": "名称",
+        "VERSION": "版本"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "流程统计信息",
+    "COLUMNS": {
+      "ACTIVITY": "活动",
+      "ACTIVE-COUNT": "有效计数",
+      "ACTIVE-AV-DURATION": "平均时长",
+      "COMPLETE-COUNT": "已完成计数",
+      "COMPLETE-AV-DURATION": "平均时长"
+    },
+    "MESSAGES": {
+      "TITLE": "找不到仪表板",
+      "SUBTITLE": "创建一个仪表板以便于你容易的使用"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "仪表板设置",
+    "SUBTITLE": "定制仪表板",
+    "PROCESS-DEFINITION": "流程定义",
+    "START-DATE": "启动日期",
+    "END-DATE": "结束日期",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "状态"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "全部",
+        "STATUS-ACTIVE": "活动",
+        "STATUS-COMPLETE": "完成"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "附件",
+      "NO-NAME": "默认名称"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "任务审计",
+      "PROCESS-AUDIT": "流程审计",
+      "CANCEL-PROCESS": "取消流程",
+      "INFO": "信息"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "创建",
+      "NEW-TASK": "新任务",
+      "NEW-PROCESS": "新流程"
+    },
+    "MENU": {
+      "CREATE": "创建",
+      "DASHBOARD": "仪表板",
+      "TASKS": "任务",
+      "PROCESSES": "流程"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "信息",
+    "ENTRY-PROCESSES": "流程",
+    "ENTRY-TASKS": "任务",
+    "ENTRY-DASHBOARD": "仪表板",
+    "ENTRY-NEW-TASK": "新任务",
+    "ENTRY-NEW-PROCESS": "新流程"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "运行"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "我的任务",
+    "NO-FORM-MESSAGE": "未附加表单",
+    "COMPLETE-TASK-MESSAGE": "任务 {{taskName}} 已完成",
+    "COMPLETE-TASK-SUB-MESSAGE": "没有要添加的表单",
+    "BUTTON": {
+      "COMPLETE": "完成",
+      "CANCEL": "取消"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "表单已经保存成功",
+      "FORM-ATTACH": "表单已成功附加",
+      "FORM-UPDATE": "表单已成功更新",
+      "FORM-ERROR": "无法附加表单",
+      "FORM-COMPLETED": "任务已完成"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "保存或者放弃这个编辑过的表单",
+      "SAVE": "保存",
+      "DISCARD": "放弃"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "确定要取消流程？",
+      "SUB-TITLE": "所有相关任务将被取消",
+      "ACTION-NO": "否",
+      "ACTION-YES": "是"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "提供者",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

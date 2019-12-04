@@ -1,0 +1,40 @@
+<div class="dw-template-container">
+    <adf-toolbar>
+        <adf-toolbar-title>
+            <apw-breadcrumbs></apw-breadcrumbs>
+        </adf-toolbar-title>
+        <div class="adf-toolbar--spacer"></div>
+        <apw-breadcrumb-actions fxHide.xs *ngIf="taskContent$ | async" [selectedAction]="getBreadcrumbActionName()" (infoClick)="toggleInfoDrawer()"></apw-breadcrumb-actions>
+    </adf-toolbar>
+
+    <div class="dw-template-content-container">
+
+        <div class="dw-template-content">
+            <div class="dw-template-fixed-content">
+                <apw-tasklist-paginator *ngIf="taskFilter?.filter" [currentFilter]="taskFilter" (success)="onSuccessTaskList($event)" (rowClick)="onTaskRowClick($event)"
+                    (rowDoubleClick)="onTaskRowDoubleCLick($event)" #tasklistPaginator>
+                </apw-tasklist-paginator>
+            </div>
+        </div>
+        <ng-container *ngIf="showSidebar">
+            <div class="dw-template__sidebar">
+                <div id="dw-tasklist-sidebar-id" class="dw-template-fixed-content">
+                    <apw-task-sidebar
+                        [appId]="appId"
+                        [taskDetails]="taskDetails"
+                        [taskFormName]="taskFormName"
+                        [readOnlyForm]="readOnlyForm"
+                        (claim)="onClaim($event)"
+                        (changeAssignee)="assignTaskToUser($event)"
+                        (formEdit)="onFormEdit()"
+                        (updated)="reloadTask()">
+                            <div>
+                                <mat-icon id="dw-tasklist-sidebar-open-new-id" data-automation-id="task-open-new" (click)="openTaskForm()">open_in_new</mat-icon>
+                                <mat-icon id="dw-tasklist-sidebar-close-id" data-automation-id="task-close" (click)="closeTaskDetailsLayout()">close</mat-icon>
+                            </div>
+                    </apw-task-sidebar>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

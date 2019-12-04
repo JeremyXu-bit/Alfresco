@@ -1,0 +1,43 @@
+<div class="dw-template-container">
+    <apw-process-toolbar id="apw-process-toolbar-id" *ngIf="processInstanceDetails" data-automation-id="process-full-form-toolbar"
+        [appName]="appName"
+        [id]="processInstanceDetails.id"
+        [name]="processInstanceDetails.name"
+        [fileName]="'Process Audit -' + processInstanceDetails.id"
+        (iconClick)="onToolbarIconClick($event)"
+        [selectedAction]="getToolBarActionName()"
+        [disableButton]="!isRunning()">
+        <ng-container *ngIf="!isDetailsTabActive()">
+            <mat-icon fxHide.xs>chevron_right</mat-icon>
+            <span id="apw-process-toolbar-title" fxHide.xs>{{ 'DW-TOOLBAR.TITLE.ATTACHMENTS' | translate }}</span>
+        </ng-container>
+    </apw-process-toolbar>
+
+    <div class="dw-template-content-container">
+        <div class="dw-template-content">
+            <div class="dw-template-fixed-content" fxHide.xs="{{showInfoDrawer}}">
+                <ng-container *ngIf="isDetailsTabActive(); else process_activity">
+                    <apw-process-details id="apw-process-details-id" *ngIf="hasProcessInstance()"
+                        [processInstanceDetails]="processInstanceDetails"
+                        (navigate)="onProcessNavigate($event)">
+                    </apw-process-details>
+                </ng-container>
+                <ng-template #process_activity>
+                    <apw-process-attachment id="apw-process-attachment-id" [processInstanceDetails]="processInstanceDetails">
+                    </apw-process-attachment>
+                </ng-template>
+            </div>
+            <ng-container *ngIf="showInfoDrawer">
+                <div class="dw-template__sidebar">
+                    <apw-process-sidebar id="apw-process-sidebar-id"
+                        [selectedTab]="selectedTab"
+                        [processInstanceDetails]="processInstanceDetails"
+                        (currentTab)="onSelectedTab($event)"
+                        (update)="refresh()"
+                        (navigate)=onNavigate($event)>
+                    </apw-process-sidebar>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

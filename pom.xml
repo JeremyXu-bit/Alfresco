@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.alfresco</groupId>
+  <artifactId>alfresco-process-workspace</artifactId>
+  <version>1.3.2</version>
+  <packaging>war</packaging>
+  <distributionManagement>
+    <repository>
+      <id>alfresco-internal</id>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/internal-staging/</url>
+    </repository>
+    <snapshotRepository>
+      <id>alfresco-internal-snapshots</id>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-enterprise-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <warSourceDirectory>dist</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

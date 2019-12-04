@@ -1,0 +1,63 @@
+@mixin apw-dashboard-settings-theme($theme) {
+
+  $background : map-get($theme, background);
+
+  .dw {
+      &-full-width-field {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+        padding-bottom: 16px;
+      }
+
+      &-dashboard-half-width-item {
+            width:49%;
+            display: inline-block;
+        }
+
+      &-dashboard-label {
+        width: 258px;
+        height: 20px;
+        opacity: 0.54;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.43;
+        letter-spacing: -0.2px;
+        text-align: left;
+      }
+      &-dashboard-end-date {
+        padding-left: 96px;
+      }
+
+      &-dashboard-settings-title {
+        font-weight: bold;
+        font-size: 20px;
+        padding: 6px 15px 14px
+      }
+
+      &-dashboard-settings-subtitle {
+        font-size: 16px;
+      }
+
+      &-dashboard-settings {
+        background-color: mat-color($background, background) !important;
+        padding: 8px;
+
+        mat-card-content {
+          padding-top: 21px !important;
+        }
+
+        mat-select {
+          padding-top: 10px !important;
+        }
+
+        .mat-select-value-text {
+          font-size: 13px;
+        }
+
+        .mat-input-element {
+          font-size: 13px;
+        }
+      }
+  }
+}

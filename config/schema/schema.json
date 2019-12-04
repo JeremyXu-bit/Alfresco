@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "https://github.com/Alfresco/adf-app-manager-ui/tree/master/config/schema/schema.json",
+    "title": "Process Workspace configuration",
+    "description": "Configuration object for Process Workspace",
+    "type":"object",
+    "definitions": {
+        "language": {
+            "description": "Language definition",
+            "type": "object",
+            "properties": {
+                "key": { "type": "string" },
+                "label": { "type": "string" }
+            }
+        }
+    },
+    "properties": {
+        "ecmHost": {
+            "description": "ECM host",
+            "type": "string"
+        },
+        "bpmHost": {
+            "description": "BPM host",
+            "type": "string"
+        },
+        "application": {
+            "description": "Application's global configuration",
+            "type": "object",
+            "properties": {
+                "name": { "type": "string", "description": "Name of the application" }
+            }
+        },
+        "pagination": {
+            "description": "Pagination configuration",
+            "type": "object",
+            "properties": {
+                "size": {
+                    "type": "number",
+                    "description": "Pagination's default page size" 
+                },
+                "supportedPageSizes": {
+                    "description": "Pagination's supported page sizes",
+                    "type": "array",
+                    "items": { "type": "number" }
+                }
+            }
+        },
+        "path-logo":{
+            "description": "Path for Application Logo",
+            "type": "string"
+        },
+        "locale":{
+            "description": "Application default Language",
+            "type": "string"
+        },
+        "languages": {
+            "description": "Supported languages",
+            "type": "array",
+            "items": { "$ref": "#/definitions/language" }
+        },
+        "sidebarBreakpoints": {
+            "description": "Breakpoints for sidebar",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "breakpoints": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "mode": { "type": "string" },
+                    "position": { "type": "string" },
+                    "showMini": { "type": "boolean" },
+                    "isHeaderInside": { "type": "boolean" }
+                }
+            }
+        },
+        "adf-start-process": {
+            "description": "New Process configuration",
+            "type": "object",
+            "properties": {
+                "name": { 
+                    "type": "string",
+                    "description": "Name for the new process instance" 
+                },
+                "processDefinitionName": {
+                    "type": "string",
+                    "description": " Process to be pre-selected"
+                }
+            }
+            }
+        },
+        "adf-task-list": {
+            "description": "Task list component configuration",
+            "type": "object",
+            "properties": {
+                "presets": {
+                    "description": "Presets for task list component",
+                    "type": "object",
+                    "patternProperties": {
+                        ".*": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "key": { "type": "string" },
+                                    "type": { "type": "string" },
+                                    "title": { "type": "string" },
+                                    "cssClass": { "type": "string" },
+                                    "sortable": { "type": "boolean" }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "adf-login": {
+            "description": "ADF Login Configuration",
+            "type": "object",
+            "properties": {
+                "copyrightText": {
+                    "type": "string",
+                    "description": "Copyright Text" 
+                },
+                "providers": {
+                    "type": "string",
+                    "description": "Providers for ADF Login" 
+                }
+            }
+        }
+    }

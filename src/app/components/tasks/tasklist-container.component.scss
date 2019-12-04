@@ -1,0 +1,27 @@
+adf-task-header {
+    word-break: break-all;
+    .adf-textitem-editable {
+        width: 40%
+    }
+}
+
+adf-toolbar .mat-toolbar {
+    border: none !important;
+    border-bottom: 1px solid #e2e2e2 !important;
+    height: 48px !important;
+}
+
+.dw-task-list-sidebar-drawer .adf-info-drawer-layout {
+    min-height: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    apw-tasklist-container .dw-template-content {
+        display: block;
+    }
+
+    //Workaround for first column values move downwards of the screen when info drawer is open https://issues.alfresco.com/jira/browse/DW-979
+    .adf-data-table-cell--ellipsis__name .adf-datatable-cell {
+        position: fixed !important;
+    }
+ }

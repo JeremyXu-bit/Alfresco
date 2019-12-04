@@ -1,0 +1,8 @@
+@mixin setting-theme($theme) {
+    $primary: map-get($theme, primary);
+
+    apw-setting .adf-setting-toolbar {
+        background: mat-color($primary) !important;
+    }
+
+}

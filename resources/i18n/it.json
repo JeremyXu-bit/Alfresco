@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Disconnetti",
+      "PROFILE-SETTINGS": "Impostazioni profilo",
+      "ABOUT": "Informazioni su",
+      "LANGUAGES": "Lingue"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Versione:",
+      "LICENSE": {
+        "TITLE": "Licenza",
+        "PROPERTY": "Dettagli",
+        "VALUE": "Valore"
+      },
+      "STATUS": {
+        "TITLE": "Stato",
+        "PROPERTY": "Dettagli",
+        "VALUE": "Valore"
+      },
+      "PACKAGES": {
+        "TITLE": "Pacchetti",
+        "NAME": "Nome",
+        "VERSION": "Versione"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Statistiche processo",
+    "COLUMNS": {
+      "ACTIVITY": "Attività",
+      "ACTIVE-COUNT": "Attivi Totale",
+      "ACTIVE-AV-DURATION": "Durata Media",
+      "COMPLETE-COUNT": "Completi Totale",
+      "COMPLETE-AV-DURATION": "Durata Media"
+    },
+    "MESSAGES": {
+      "TITLE": "Nessuna statistica è stata trovata",
+      "SUBTITLE": "Crea nuovi processi per vedere le statistiche"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Impostazioni pannello di controllo",
+    "SUBTITLE": "Personalizza il pannello di controllo",
+    "PROCESS-DEFINITION": "Definizione di processo",
+    "START-DATE": "Data di inizio",
+    "END-DATE": "Data di fine",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Stato"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Tutti",
+        "STATUS-ACTIVE": "Attivo",
+        "STATUS-COMPLETE": "Completa"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Allegati",
+      "NO-NAME": "Nome predefinito"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Audit compito",
+      "PROCESS-AUDIT": "Audit processo",
+      "CANCEL-PROCESS": "Annulla processo",
+      "INFO": "Informazioni"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Crea",
+      "NEW-TASK": "Nuovo compito",
+      "NEW-PROCESS": "Nuovo processo"
+    },
+    "MENU": {
+      "CREATE": "Crea",
+      "DASHBOARD": "Pannello di controllo",
+      "TASKS": "Compiti",
+      "PROCESSES": "Processi"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Informazioni",
+    "ENTRY-PROCESSES": "Processi",
+    "ENTRY-TASKS": "Compiti",
+    "ENTRY-DASHBOARD": "Pannello di controllo",
+    "ENTRY-NEW-TASK": "Nuovo compito",
+    "ENTRY-NEW-PROCESS": "Nuovo processo"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "In esecuzione"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "I miei compiti",
+    "NO-FORM-MESSAGE": "Nessun modulo allegato",
+    "COMPLETE-TASK-MESSAGE": "Compito {{taskName}} completato",
+    "COMPLETE-TASK-SUB-MESSAGE": "Nessun modulo da aggiungere",
+    "BUTTON": {
+      "COMPLETE": "Completa",
+      "CANCEL": "Annulla"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Modulo è stato salvato",
+      "FORM-ATTACH": "Modulo allegato correttamente",
+      "FORM-UPDATE": "Modulo aggiornato correttamente",
+      "FORM-ERROR": "Impossibile allegare il modulo",
+      "FORM-COMPLETED": "Il compito è stato completato"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Salva o Ignora il modulo modificato",
+      "SAVE": "Salva",
+      "DISCARD": "Ignora"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Annullare il processo?",
+      "SUB-TITLE": "Questo annullerà tutte le attività correlate",
+      "ACTION-NO": "No",
+      "ACTION-YES": "Sì"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Provider",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

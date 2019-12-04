@@ -1,0 +1,22 @@
+<div class="providers" fxFlex="40%" fxFlexOffset="30%">
+    <mat-toolbar color="primary">
+        {{ 'PROVIDERS.TITLE'| translate }}
+    </mat-toolbar>
+    <mat-card>
+        <p>
+            <mat-slide-toggle id="switch1" [color]="'primary'" (change)="toggleECM()" [checked]="isECM">
+                {{ 'PROVIDERS.CONTENT-SERVICES'| translate }}
+            </mat-slide-toggle>
+        </p>
+        <p>
+            <mat-slide-toggle id="switch2"  disabled [color]="'primary'"  checked="true">
+                {{ 'PROVIDERS.PROCESS-SERVICES'| translate }}
+            </mat-slide-toggle>
+        </p>
+        <mat-card-actions>
+            <div fxFlex></div>
+            <button mat-button color="primary" (click)="onBackClick()">{{'CORE.HOST_SETTINGS.BACK' | translate }}</button>
+            <button mat-raised-button color="primary" (click)="onApplyClick()">{{'CORE.HOST_SETTINGS.APPLY' | translate }}</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

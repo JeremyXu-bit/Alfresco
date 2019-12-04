@@ -1,0 +1,52 @@
+<adf-info-drawer [selectedIndex]="selectedTab" class="dw-process-sidebar-drawer" (currentTab)="onCurrentTab($event)">
+    <div info-drawer-title class="title">
+        <div>{{processInstanceDetails?.name}}</div>
+    </div>
+    <div info-drawer-buttons>
+        <ng-content></ng-content>
+    </div>
+
+    <adf-info-drawer-tab label="{{ 'ADF_TASK_LIST.DETAILS.LABELS.INFO_DRAWER_TAB_DETAILS_TITLE' | translate }}">
+        <div class="dw-process-instance-header-container">
+            <adf-process-instance-header [processInstance]="processInstanceDetails"></adf-process-instance-header>
+        </div>
+        <mat-card>
+            <mat-card-content>
+                <adf-card-view
+                    [properties]="getFormProperties()"
+                    [editable]="false">
+                </adf-card-view>
+            </mat-card-content>
+        </mat-card>
+    </adf-info-drawer-tab>
+
+    <adf-info-drawer-tab label="{{ 'ADF_TASK_LIST.DETAILS.LABELS.INFO_DRAWER_TAB_ACTIVITY_TITLE' | translate }}">
+        <mat-card>
+            <mat-card-content>
+                <adf-process-instance-comments *ngIf="processInstanceDetails?.id"
+                [processInstanceId]="processInstanceDetails.id"
+                [readOnly]="!isRunning()"></adf-process-instance-comments>
+            </mat-card-content>
+        </mat-card>
+    </adf-info-drawer-tab>
+</adf-info-drawer>
+
+<ng-template *ngIf="hasStartForm()" #startDialog>
+    <div>
+        <h4 matDialogTitle>{{ processInstanceDetails.name }}</h4>
+        <div mat-dialog-content>
+            <adf-start-form [processId]="processInstanceDetails.id"
+                [showRefreshButton]="false"
+                [readOnlyForm]="true"
+                [showOutcomeButtons]="false"
+                (formContentClicked)='onFormContentClick()'>
+            </adf-start-form>
+        </div>
+        <div mat-dialog-actions>
+            <div fxFlex></div>
+            <button mat-button color="primary" (click)="closeFormDialog()">
+                {{ 'ADF_PROCESS_LIST.DETAILS.TASKS.TASK_CLOSE' | translate }}
+            </button>
+        </div>
+    </div>
+</ng-template>

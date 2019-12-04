@@ -1,0 +1,13 @@
+<div class="apw-task-form-dialog">
+    <mat-dialog-content>
+        <adf-attach-form 
+          [taskId]="data.taskId"
+          [formKey]="data.formKey"
+          (cancelAttachForm)="onCancel()"
+          (success)="onSuccess()"
+          (error)="onError()">
+        </adf-attach-form>
+    </mat-dialog-content>
+</div>
+
+

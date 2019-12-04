@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Wyloguj się",
+      "PROFILE-SETTINGS": "Ustawienia profilu",
+      "ABOUT": "Informacje",
+      "LANGUAGES": "Języki"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Wersja:",
+      "LICENSE": {
+        "TITLE": "Licencja",
+        "PROPERTY": "Właściwość",
+        "VALUE": "Wartość"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Właściwość",
+        "VALUE": "Wartość"
+      },
+      "PACKAGES": {
+        "TITLE": "Pakiety",
+        "NAME": "Nazwa",
+        "VERSION": "Wersja"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Statystyki procesów",
+    "COLUMNS": {
+      "ACTIVITY": "Działanie",
+      "ACTIVE-COUNT": "Liczba aktywnych",
+      "ACTIVE-AV-DURATION": "Średni czas trwania",
+      "COMPLETE-COUNT": "Liczba zakończonych",
+      "COMPLETE-AV-DURATION": "Średni czas trwania"
+    },
+    "MESSAGES": {
+      "TITLE": "Nie znaleziono pulpitu nawigacyjnego",
+      "SUBTITLE": "Utwórz nowy pulpit nawigacyjny, który można z łatwością wyświetlić"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Ustawienia pulpitu nawigacyjnego",
+    "SUBTITLE": "Dostosuj pulpit nawigacyjny",
+    "PROCESS-DEFINITION": "Definicja procesu",
+    "START-DATE": "Data rozpoczęcia",
+    "END-DATE": "Data zakończenia",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Wszystkie",
+        "STATUS-ACTIVE": "Aktywne",
+        "STATUS-COMPLETE": "Zakończ"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Załączniki",
+      "NO-NAME": "Domyślna nazwa"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Inspekcja zadania",
+      "PROCESS-AUDIT": "Inspekcja procesu",
+      "CANCEL-PROCESS": "Anuluj proces",
+      "INFO": "Informacje"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Utwórz",
+      "NEW-TASK": "Nowe zadanie",
+      "NEW-PROCESS": "Nowy proces"
+    },
+    "MENU": {
+      "CREATE": "Utwórz",
+      "DASHBOARD": "Pulpit nawigacyjny",
+      "TASKS": "Zadania",
+      "PROCESSES": "Procesy"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Obszar roboczy",
+    "ACTION-INFO-TOOLTIP": "Informacje",
+    "ENTRY-PROCESSES": "Procesy",
+    "ENTRY-TASKS": "Zadania",
+    "ENTRY-DASHBOARD": "Pulpit nawigacyjny",
+    "ENTRY-NEW-TASK": "Nowe zadanie",
+    "ENTRY-NEW-PROCESS": "Nowy proces"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Obszar roboczy Alfresco Process Services",
+    "APPS-TABLETS": "Obszar roboczy Process Services",
+    "APPS-MOBILES": "Obszar roboczy"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Uruchomione"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Moje zadania",
+    "NO-FORM-MESSAGE": "Nie załączono formularzy",
+    "COMPLETE-TASK-MESSAGE": "Zadanie {{taskName}} zostało zakończone.",
+    "COMPLETE-TASK-SUB-MESSAGE": "Brak formularzy do dodania.",
+    "BUTTON": {
+      "COMPLETE": "Zakończ",
+      "CANCEL": "Anuluj"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formularz został zapisany pomyślnie",
+      "FORM-ATTACH": "Formularz został załączony pomyślnie",
+      "FORM-UPDATE": "Formularz został zaktualizowany pomyślnie",
+      "FORM-ERROR": "Nie można załączyć formularza",
+      "FORM-COMPLETED": "Zadanie zostało zakończone"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Zapisz lub odrzuć zmodyfikowany formularz",
+      "SAVE": "Zapisz",
+      "DISCARD": "Odrzuć"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Czy na pewno chcesz anulować proces?",
+      "SUB-TITLE": "Spowoduje to anulowanie wszystkich powiązanych zadań",
+      "ACTION-NO": "Nie",
+      "ACTION-YES": "Tak"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Dostawcy",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

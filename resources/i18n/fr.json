@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Déconnexion",
+      "PROFILE-SETTINGS": "Paramètres du profil",
+      "ABOUT": "À propos de",
+      "LANGUAGES": "Langues"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Version :",
+      "LICENSE": {
+        "TITLE": "Licence",
+        "PROPERTY": "Propriétés",
+        "VALUE": "Valeur"
+      },
+      "STATUS": {
+        "TITLE": "Statut",
+        "PROPERTY": "Propriétés",
+        "VALUE": "Valeur"
+      },
+      "PACKAGES": {
+        "TITLE": "Packages",
+        "NAME": "Nom",
+        "VERSION": "Version"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Statistiques des processus",
+    "COLUMNS": {
+      "ACTIVITY": "Activité",
+      "ACTIVE-COUNT": "Actives",
+      "ACTIVE-AV-DURATION": "Durée moy. act.",
+      "COMPLETE-COUNT": "Terminées",
+      "COMPLETE-AV-DURATION": "Durée moy. term."
+    },
+    "MESSAGES": {
+      "TITLE": "Aucun tableau de bord trouvé",
+      "SUBTITLE": "Créer un nouveau tableau de bord facile à consulter"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Paramètres du tableau de bord",
+    "SUBTITLE": "Personnaliser votre tableau de bord",
+    "PROCESS-DEFINITION": "Définition de processus",
+    "START-DATE": "Date de début",
+    "END-DATE": "Date de fin",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Statut"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Tout",
+        "STATUS-ACTIVE": "Actif",
+        "STATUS-COMPLETE": "Terminer"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Eléments attachés",
+      "NO-NAME": "Nom par défaut"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Vérification tâche",
+      "PROCESS-AUDIT": "Vérification processus",
+      "CANCEL-PROCESS": "Annuler le processus",
+      "INFO": "Informations"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Créer",
+      "NEW-TASK": "Nouvelle tâche",
+      "NEW-PROCESS": "Nouveau processus"
+    },
+    "MENU": {
+      "CREATE": "Créer",
+      "DASHBOARD": "Tableau de bord",
+      "TASKS": "Tâches",
+      "PROCESSES": "Processus"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Informations",
+    "ENTRY-PROCESSES": "Processus",
+    "ENTRY-TASKS": "Tâches",
+    "ENTRY-DASHBOARD": "Tableau de bord",
+    "ENTRY-NEW-TASK": "Nouvelle tâche",
+    "ENTRY-NEW-PROCESS": "Nouveau processus"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "En cours"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Mes tâches",
+    "NO-FORM-MESSAGE": "Aucun formulaire joint",
+    "COMPLETE-TASK-MESSAGE": "La tâche {{taskName}} est terminée",
+    "COMPLETE-TASK-SUB-MESSAGE": "Aucun formulaire à ajouter",
+    "BUTTON": {
+      "COMPLETE": "Terminer",
+      "CANCEL": "Annuler"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formulaire a bien été enregistré",
+      "FORM-ATTACH": "Le formulaire a été joint",
+      "FORM-UPDATE": "Le formulaire a été mis à jour",
+      "FORM-ERROR": "Impossible de joindre le formulaire",
+      "FORM-COMPLETED": "La tâche a été effectuée"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Enregistrer ou Ignorer le formulaire modifié",
+      "SAVE": "Enregistrer",
+      "DISCARD": "Ignorer"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Êtes-vous sûr de vouloir annuler le processus ?",
+      "SUB-TITLE": "Toutes les tâches associées seront annulées",
+      "ACTION-NO": "Non",
+      "ACTION-YES": "Oui"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Fournisseurs",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

@@ -1,0 +1,61 @@
+@import '~@alfresco/adf-process-services/theming';
+@import '~@alfresco/adf-insights/theming';
+@import '~@alfresco/adf-core/theming';
+
+@import '~@angular/material/theming';
+
+@import 'app/apw-all-theme';
+
+@include mat-core($alfresco-typography);
+
+
+$my-own-brown: (50: #f9f2ec,
+  100: #ecd9c6,
+  200: #dfbf9f,
+  300: #d2a679,
+  400: #c68c53,
+  500: #ac7339,
+  600: #86592d,
+  700: #604020,
+  800: #392613,
+  900: #130d06,
+  A100: #e6ccb3,
+  A200: #cc9966,
+  A400: #996633,
+  A700: #4d3319,
+  contrast: (50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  ));
+  $primary: mat-palette($my-own-brown);
+// $primary: mat-palette($alfresco-accent-orange);
+$accent:  mat-palette($alfresco-ecm-cyan);
+$warn:    mat-palette($alfresco-warn);
+$theme:   mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+@include adf-process-services-theme($theme);
+@include adf-insights-theme($theme);
+@include adf-core-theme($theme);
+
+$primaryBlue: mat-palette($alfresco-ecm-blue);
+$accentOrange:  mat-palette($alfresco-accent-orange);
+$themeBluOrange:   mat-light-theme($primaryBlue, $accentOrange, $warn);
+
+@include adf-userinfo-theme($themeBluOrange);
+@include setting-theme($themeBluOrange);
+@include providers-theme($themeBluOrange);
+
+@include apw-all-theme($theme);

@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Afmelden",
+      "PROFILE-SETTINGS": "Profielinstellingen",
+      "ABOUT": "Info",
+      "LANGUAGES": "Talen"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Versie:",
+      "LICENSE": {
+        "TITLE": "Licentie",
+        "PROPERTY": "Eigenschappen",
+        "VALUE": "Waarde"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Eigenschappen",
+        "VALUE": "Waarde"
+      },
+      "PACKAGES": {
+        "TITLE": "Pakketten",
+        "NAME": "Naam",
+        "VERSION": "Versie"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Processtatistieken",
+    "COLUMNS": {
+      "ACTIVITY": "Activiteit",
+      "ACTIVE-COUNT": "Aantal actief",
+      "ACTIVE-AV-DURATION": "Gemiddelde duur",
+      "COMPLETE-COUNT": "Aantal voltooid",
+      "COMPLETE-AV-DURATION": "Gemiddelde duur"
+    },
+    "MESSAGES": {
+      "TITLE": "Geen dashboard gevonden",
+      "SUBTITLE": "Maak een nieuw dashboard dat u gemakkelijk wilt kunnen weergeven"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Dashboardinstellingen",
+    "SUBTITLE": "Uw dashboard aanpassen",
+    "PROCESS-DEFINITION": "Procesdefinitie",
+    "START-DATE": "Begindatum",
+    "END-DATE": "Einddatum",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Alle",
+        "STATUS-ACTIVE": "Actief",
+        "STATUS-COMPLETE": "Voltooid"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Bijlagen",
+      "NO-NAME": "Standaardnaam"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Taak-audit",
+      "PROCESS-AUDIT": "Proces-audit",
+      "CANCEL-PROCESS": "Proces annuleren",
+      "INFO": "Info"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Maken",
+      "NEW-TASK": "Nieuwe taak",
+      "NEW-PROCESS": "Nieuw proces"
+    },
+    "MENU": {
+      "CREATE": "Maken",
+      "DASHBOARD": "Dashboard",
+      "TASKS": "Taken",
+      "PROCESSES": "Processen"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Info",
+    "ENTRY-PROCESSES": "Processen",
+    "ENTRY-TASKS": "Taken",
+    "ENTRY-DASHBOARD": "Dashboard",
+    "ENTRY-NEW-TASK": "Nieuwe taak",
+    "ENTRY-NEW-PROCESS": "Nieuw proces"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Wordt uitgevoerd"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Mijn taken",
+    "NO-FORM-MESSAGE": "Geen formulieren bijgevoegd",
+    "COMPLETE-TASK-MESSAGE": "Taak {{taskName}} voltooid",
+    "COMPLETE-TASK-SUB-MESSAGE": "Geen formulieren om toe te voegen",
+    "BUTTON": {
+      "COMPLETE": "Voltooien",
+      "CANCEL": "Annuleren"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formulier is opgeslagen",
+      "FORM-ATTACH": "Formulier is bijgevoegd",
+      "FORM-UPDATE": "Formulier is bijgewerkt",
+      "FORM-ERROR": "Kan formulier niet bijvoegen",
+      "FORM-COMPLETED": "De taak is voltooid"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Het gewijzigde formulier opslaan of negeren",
+      "SAVE": "Opslaan",
+      "DISCARD": "Negeren"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Weet u zeker dat u het proces wilt annuleren?",
+      "SUB-TITLE": "Hiermee worden alle bijbehorende taken geannuleerd",
+      "ACTION-NO": "Nee",
+      "ACTION-YES": "Ja"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Providers",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

@@ -1,0 +1,102 @@
+<div class="dw-create-menu-container" *ngIf="isExpanded(); else iconMenuTemp">
+    <adf-userinfo fxHide fxShow.xs></adf-userinfo>
+    <div fxHide fxShow.xs class="dw-menu-divider"></div>
+    <adf-sidebar-action-menu id="dw-create-menu-button" [expanded]="expanded" title="{{'DW-MENU.BUTTON.CREATE' | translate }}">
+        <mat-icon sidebar-menu-title-icon>arrow_drop_down</mat-icon>
+        <div sidebar-menu-options>
+            <button id="dw-new-task-menu" mat-menu-item (click)="onCreateClick('tasks')">
+                <mat-icon>assignment</mat-icon>
+                <span>{{'DW-MENU.BUTTON.NEW-TASK' | translate }}</span>
+            </button>
+            <button id="dw-new-process-menu" mat-menu-item (click)="onCreateClick('processes')">
+                <mat-icon>assessment</mat-icon>
+                <span>{{'DW-MENU.BUTTON.NEW-PROCESS' | translate }}</span>
+            </button>
+        </div>
+    </adf-sidebar-action-menu>
+</div>
+
+<ng-template #iconMenuTemp>
+<div class="dw-create-icon-menu-container">
+    <adf-sidebar-action-menu [expanded]="expanded">
+        <mat-icon sidebar-menu-expand-icon matTooltip="{{'DW-MENU.MENU.CREATE' | translate }}" [class.dw-menu-icon--selected]="newProcessOrTask" class="dw-menu-icon">queue</mat-icon>
+        <div sidebar-menu-options>
+            <button mat-menu-item (click)="onCreateClick('tasks')">
+                <mat-icon>assignment</mat-icon>
+                <span>{{'DW-MENU.BUTTON.NEW-TASK' | translate }}</span>
+            </button>
+            <button mat-menu-item (click)="onCreateClick('processes')">
+                <mat-icon>assessment</mat-icon>
+                <span>{{'DW-MENU.BUTTON.NEW-PROCESS' | translate }}</span>
+            </button>
+            <button mat-menu-item (click)="onCreateClick('test')">
+              <mat-icon>assessment</mat-icon>
+              <span>test</span>
+            </button>
+        </div>
+    </adf-sidebar-action-menu>
+</div>
+</ng-template>
+
+<mat-accordion class="dw-panel" [displayMode]="'flat'">
+    <mat-expansion-panel #dashboardPanel [hideToggle]="true" [expanded]="false" (opened)="onAccordionClick('dashboard')">
+        <mat-expansion-panel-header>
+            <mat-panel-title [class.dw-menu--selected]="isMenuSelected('dashboard')">
+                <mat-icon class="dw-menu-icon" matTooltip="{{ (!isExpanded()?'DW-MENU.MENU.DASHBOARD':'') | translate }}">
+                    view_module
+                </mat-icon>
+                <div class="dw-menu-title">{{ (isExpanded()?'DW-MENU.MENU.DASHBOARD':'') | translate }}</div>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-expansion-panel #taskPanel [hideToggle]="!isExpanded()" [expanded]="isMenuSelected('tasks') && isExpanded()" (opened)="onAccordionClick('tasks')">
+        <mat-expansion-panel-header>
+            <mat-panel-title [class.dw-menu--selected]="isMenuSelected('tasks')">
+                <mat-icon class="dw-menu-icon" matTooltip="{{ (!isExpanded()?'DW-MENU.MENU.TASKS':'') | translate }}">
+                    assignment
+                </mat-icon>
+                <div class="dw-menu-title">{{ (isExpanded()?'DW-MENU.MENU.TASKS':'') | translate }}</div>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <adf-task-filters #taskFilter [hidden]="!isExpanded()"
+            [filterParam]="currentTaskFilter"
+            [appId]="getAppId()"
+            [showIcon]="false"
+            (filterClick)="onTaskFilterClick($event)"
+            (success)="onSuccessTaskFilterList($event)">
+        </adf-task-filters>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel #processPanel [hideToggle]="!isExpanded()" [expanded]="isMenuSelected('processes') && isExpanded()" (opened)="onAccordionClick('processes')">
+            <mat-expansion-panel-header>
+                <mat-panel-title [class.dw-menu--selected]="isMenuSelected('processes')">
+                    <mat-icon class="dw-menu-icon" matTooltip="{{ (!isExpanded()?'DW-MENU.MENU.PROCESSES':'') | translate }}">
+                        assessment
+                    </mat-icon>
+                    <div class="dw-menu-title">{{ (isExpanded()?'DW-MENU.MENU.PROCESSES':'') | translate }}</div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <adf-process-instance-filters  #processFilter [hidden]="!isExpanded()"
+                [filterParam]="currentProcessFilter"
+                [appId]="getAppId()"
+                [showIcon]="false"
+                (filterClick)="onProcessFilterClick($event)"
+                (success)="onSuccessProcessFilterList($event)">
+            </adf-process-instance-filters>
+        </mat-expansion-panel>
+
+        <!-- 2019-12-02新增 -->
+        <!-- start -->
+        <mat-expansion-panel #dashboardPanel [hideToggle]="true" [expanded]="false"
+          (opened)="onAccordionClick('dashboard')">
+          <mat-expansion-panel-header>
+            <mat-panel-title [class.dw-menu--selected]="isMenuSelected('')">
+              <mat-icon class="dw-menu-icon" matTooltip="{{ (!isExpanded()?'DW-MENU.MENU.DASHBOARD':'') | translate }}">
+                view_module
+              </mat-icon>
+              <div class="dw-menu-title">{{ (isExpanded()?'DW-MENU.MENU.DASHBOARD':'') | translate }}</div>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+        <!-- end -->
+</mat-accordion>

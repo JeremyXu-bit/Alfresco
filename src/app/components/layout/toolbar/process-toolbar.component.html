@@ -1,0 +1,34 @@
+<adf-toolbar>
+    <adf-toolbar-title>
+       <mat-icon id="backButton" (click)="onBackButtonClick()">keyboard_backspace</mat-icon>
+       <div class="dw-toolbar-title">
+          <span class="dw-toolbar-title--ellipsis" id="process-name">{{ displayProcessName() }}</span>
+          <span class="dw-toolbar-title--ellipsis dw-toolbar-title-app-name" id="app-name">{{ displayAppName() }}</span>
+          <ng-content></ng-content>
+       </div>
+    </adf-toolbar-title>
+    <div class="adf-toolbar--spacer"></div>
+    <div class="dw-process-toolbar-icon-container">
+       <button id="processauditButton"
+            mat-icon-button
+            matTooltip="{{ 'DW-TOOLBAR.TOOLTIP-INFO.PROCESS-AUDIT' | translate }}"
+            matTooltipDisabled={{mobile}}
+            adf-process-audit
+            [process-id]="id"
+            (clicked)="onAuditClick($event)"
+            [fileName]="fileName"
+            (error)="onAuditError($event)">
+            <mat-icon>assignment_ind</mat-icon>
+       </button>
+       <button mat-icon-button
+            matTooltip="{{ 'DW-TOOLBAR.TOOLTIP-INFO.CANCEL-PROCESS' | translate }}"
+            id="process-cancel-button"
+            [disabled]="disableButton"
+            (click)="onCancelIconClick()">
+            <mat-icon>remove_circle_outline</mat-icon>
+       </button>
+       <div class="divider"></div>
+       <mat-icon data-automation-id="info-icon-id" [class.dw-info-selected-action]="isInfoActionSelected()" matTooltipDisabled={{mobile}} matTooltip="{{ 'DW-TOOLBAR.TOOLTIP-INFO.INFO' | translate }}" matTooltipDisabled={{mobile}} (click)="onInfoClick()">info_outline</mat-icon>
+       <mat-icon id="closeButton" data-automation-id="full-form-close" class="dw-full-form-close-button" (click)="onCloseIconClick()">close</mat-icon>
+    </div>
+ </adf-toolbar>

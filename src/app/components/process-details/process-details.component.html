@@ -1,0 +1,38 @@
+<mat-card class="dw-tasklist-card">
+    <adf-tasklist
+        id="dw-tasklist-id"
+        [processInstanceId]="processInstanceDetails?.id"
+        [presetColumn]="presetColoum"
+        [state]="'all'"
+        [sort]="'created-desc'"
+        [selectionMode]="'single'"
+        (row-dblclick)="onTaskRowDoubleCLick($event)">
+        <data-columns>
+            <data-column key="endDate" type="date" title="ADF_TASK_LIST.PROPERTIES.STATUS" [sortable]="true">
+                <ng-template let-entry="$implicit">
+                    <div title="{{getTaskStatus(entry.row.obj)}}">{{getTaskStatus(entry.row.obj)}}</div>
+                </ng-template>
+            </data-column>
+            <data-column key="assignee" title="ADF_TASK_LIST.PROPERTIES.ASSIGNEE" [sortable]="false" class= "desktop-only adf-data-table-cell--ellipsis">
+                <ng-template let-entry="$implicit">
+                    <div title="{{entry.row.obj.assignee | fullName}}">{{entry.row.obj.assignee | fullName}}</div>
+                </ng-template>
+            </data-column>
+            <data-column key="id" [sortable]="false">
+                <ng-template let-entry="$implicit">
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item adf-task-audit [task-id]="entry.row.obj.id"
+                                [fileName]="'Task Audit - ' + entry.row.obj.id"
+                                (error)="onAuditError($event)">{{ 'ADF_PROCESS_LIST.MENU_ACTIONS.DOWNLOAD_AUDIT' | translate}}</button>
+                            <button mat-menu-item (click)="onViewTask(entry.row.obj.id)">{{ 'ADF_PROCESS_LIST.MENU_ACTIONS.VIEW_TASK' | translate}}</button>
+                    </mat-menu>
+                </ng-template>
+            </data-column>
+        </data-columns>
+    </adf-tasklist>
+<br>
+<adf-diagram id="dw-diagram-id" *ngIf="isRunning()" fxHide.xs [processInstanceId]="processInstanceDetails.id"></adf-diagram>
+</mat-card>

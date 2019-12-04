@@ -1,0 +1,28 @@
+.dw {
+    &-inner-layout{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    
+    &-inner-layout__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+adf {
+    &-toolbar {
+        .mat-toolbar{
+            border: none !important;
+            border-bottom: 1px solid #e2e2e2 !important;
+            height: 48px !important;
+        }
+    }
+}
+
+adf-start-task > mat-card {
+    overflow: hidden; //TODO: To be removed after fixing adf-start-task layout
+}

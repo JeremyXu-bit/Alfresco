@@ -1,0 +1,52 @@
+<ng-container *ngIf="isTaskLoaded()">
+    <adf-form *ngIf="hasFormKey(); else noForm"
+        [taskId]="taskDetails.id"
+        [showValidationIcon]="false"
+        [showRefreshButton]="false"
+        [readOnly]="isReadOnlyForm()"
+        [showSaveButton]="isSaveButtonVisible()"
+        (formCompleted)='onFormCompleted($event)'
+        (formContentClicked)='onFormContentClick($event)'
+        (formLoaded)='onFormLoaded($event)'
+        (executeOutcome)='onFormOutcomeExecute($event)' #activitiForm>
+    </adf-form>
+    <ng-template #noForm>
+            <adf-task-standalone *ngIf="!hasProcessDefinitionId(); else noFormMessage"
+                [taskName]="taskDetails.name"
+                [taskId]="taskDetails.id"
+                [isCompleted]="isCompletedTask()"
+                [hasCompletePermission]="hasCompleteButton()"
+                [hideCancelButton]="false"
+                (complete)="onCompleteTask()"
+                (cancel)="onCancelButtonClick()"
+                (showAttachForm)="onShowAttachForm()">
+            </adf-task-standalone>
+
+            <ng-template #noFormMessage>
+                <mat-card class="dw-message-card">
+                    <mat-card-content>
+                        <div class="dw-no-form-message-container">
+                            <div class="dw-no-form-message-list">
+                                <div id="dw-no-form-id" class="dw-no-form-message" *ngIf="!isCompletedTask(); else completedMessage">{{ 'DW-TASK-FORM.NO-FORM-MESSAGE' | translate }}</div>
+                                <ng-template #completedMessage>
+                                    <div id="dw-completed-form-id" class="dw-no-form-message">
+                                        <p>{{'DW-TASK-FORM.COMPLETE-TASK-MESSAGE' | translate : getTaskName() }}</p>
+                                    </div>
+                                    <div class="dw-no-form-submessage">
+                                        {{ 'DW-TASK-FORM.COMPLETE-TASK-SUB-MESSAGE' | translate }}
+                                    </div>
+                                </ng-template>
+                            </div>
+                        </div>
+                    </mat-card-content>
+            
+                    <mat-card-actions *ngIf="!isCompletedTask()" class="apw-no-form-mat-card-actions">
+                        <div fxFlex></div>
+                        <button mat-button class="dw-task-button-cancel" (click)="onCancelButtonClick()">{{ 'DW-TASK-FORM.BUTTON.CANCEL' | translate }}</button>
+                        <button mat-button id="dw-no-form-complete-button" color="primary" (click)="onCompleteTask()" *ngIf="hasCompleteButton()">{{ 'DW-TASK-FORM.BUTTON.COMPLETE' | translate }}</button>
+                    </mat-card-actions>
+                </mat-card>
+            </ng-template>
+    </ng-template>
+</ng-container>
+

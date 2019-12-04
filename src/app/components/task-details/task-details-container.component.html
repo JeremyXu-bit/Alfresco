@@ -1,0 +1,57 @@
+<div class="dw-template-container">
+    <apw-task-toolbar id="apw-task-toolbar-id"
+        [appName]="appName"
+        [id]="taskDetails?.id"
+        [name]="taskDetails?.name"
+        [fileName]="'Task Audit -' + taskDetails?.id"
+        (onBackClick)="onBackButtonClick()"
+        (infoClick)="toggleInfoDrawer()"
+        [selectedAction]="getToolBarActionName()"
+        (onCloseClick)="oncloseIconClick()">
+    </apw-task-toolbar>
+    <div class="dw-template-content-container">
+        <div class="dw-template-content">
+            <div class="dw-template-fixed-content" fxHide.xs="{{showInfoDrawer}}">
+                <ng-container *ngIf="isDetailsTabActive(); else task_activity">
+                    <apw-task-form id="apw-task-form-id"
+                        [taskDetails]="taskDetails"
+                        (taskFormName)="onTaskFormName($event)"
+                        [readOnlyForm]="readOnlyForm"
+                        (cancel)="onCancelForm($event)"
+                        (contentClicked)="onContentClick($event)"
+                        (formChange)="onFormChanged($event)"
+                        (formAttached)="onFormAttach()"
+                        (complete)="onCompleteTaskForm($event)"
+                        (executeNoFormOutcome)="onNoFormOutCome($event)"
+                        (formOutcomeExecute)="onFormOutcomeExecute($event)"
+                        (navigate)=onNavigate($event)>
+                    </apw-task-form>
+                </ng-container>
+                <ng-template #task_activity>
+                    <apw-task-attachment id="apw-task-attachment-id"
+                        [taskDetails]="taskDetails"
+                        (contentClicked)="onContentClick($event)">
+                    </apw-task-attachment>
+                </ng-template>
+            </div>
+            <ng-container *ngIf="showInfoDrawer && hasTaskDetails()">
+                <div class="dw-template__sidebar">
+                    <div class="dw-template-fixed-content">
+                        <apw-task-sidebar id="apw-task-sidebar-id"
+                            [appId]="appId"
+                            [taskDetails]="taskDetails"
+                            [taskFormName]="taskFormName"
+                            [selectedTab]="selectedTab"
+                            [readOnlyForm]="readOnlyForm"
+                            (currentTab)="onSelectedTab($event)"
+                            (updated)="onUpdatedTask()"
+                            (formEdit)="onFormEdit()"
+                            (claim)=onClaim($event)
+                            (changeAssignee)=assignTaskToUser($event)>
+                        </apw-task-sidebar>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

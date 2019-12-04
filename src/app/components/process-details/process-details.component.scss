@@ -1,0 +1,23 @@
+apw-process-details adf-tasklist {
+    .is-selected {
+        background: #e0f7fa !important;
+    }
+
+    .adf-data-table-cell--text {
+        width: 100%;
+    }
+
+    .adf-datatable-table-cell-header,
+    .adf-datatable-row,
+    .adf-data-table-cell {
+        &:focus {
+            outline: none !important;
+        }
+
+        .ellipsis-cell .cell-container {
+            height: 100%;
+            display: flex;
+            width: 100%;
+        }
+    }
+}

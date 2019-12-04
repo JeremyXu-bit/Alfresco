@@ -1,0 +1,40 @@
+apw-tasklist-paginator{
+
+    .task-list-container {
+        height: 100%;
+    }
+
+    adf-tasklist {
+
+        height: 100%;
+        overflow-x: auto;
+
+        .is-selected {
+            background: #e0f7fa !important;
+        }
+        
+        .adf-data-table {
+            border: none;
+
+            .adf-data-table-cell--text {
+                width: 100%;
+            }
+
+            .adf-datatable-table-cell-header, .adf-datatable-row, .adf-data-table-cell {
+                &:focus {
+                    outline: none !important;
+                }
+            }
+
+            .ellipsis-cell .cell-container {
+                height: 100%;
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+
+    .adf-pagination__empty {
+        display: none;
+    }
+}

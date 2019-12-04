@@ -1,0 +1,191 @@
+@mixin apw-task-form-theme($theme) {
+
+    $primary: map-get($theme, primary);
+    $config: mat-typography-config();
+
+    :host {
+        width: 100%;
+    }
+
+    .error-dialog h3 {
+        margin: 16px 0;
+    }
+
+    .dw {
+        &-task-full-form-container {
+            height: calc(100% - 65px);
+            float: left;
+            width: calc(100% - 388px);
+            background: #f5f5f5;;
+            overflow: auto;
+        }
+
+        &-task-full-form-details-container {
+            float: left;
+            width: 385px;
+            height: calc(100% - 65px);
+            border-left: 2px solid #e2e2e2;
+            overflow: hidden;
+        }
+
+        &-task-file-viewer-container {
+            background: #fff;
+            margin: 16px;
+            border: 1px solid #e1e1e1;
+            height: calc(100% - 47px);
+
+            &-action-bar {
+                border-bottom: 1px solid #e1e1e1;
+                text-align: right;
+
+                & > button {
+                    border-left: 1px solid #e1e1e1;
+                    color: mat-color($primary);
+                    opacity: 0.54;
+                }
+
+                & > span {
+                    float: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding: 8px 16px;
+                }
+            }
+
+            &-viewer-bar {
+                text-align: center;
+                height: calc(100% - 37px);
+            }
+        }
+            &-task-full-from-display {
+            width: 100%;
+        }
+        &-create-attachment-icon {
+            position: initial;
+            float: right;
+            padding-right: 30px;
+            padding-top: 54px;
+        }
+        &-task-form-people-search-container{
+            padding: 10px 20px;
+            padding-bottom: 0px;
+            border-bottom: 1px solid #eee;
+            width: calc(100% - 40px);
+        }
+        &-no-form-message-container {
+            height:256px;
+            width: 100%;
+            display: table;
+        }
+        &-no-form-message-list {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &-no-form-message {
+            padding-bottom: 10px;
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: -1.3px;
+            opacity: .54;
+            margin: auto;
+            width: fit-content !important;
+        }
+        &-no-form-submessage {
+            font-size: 18px;
+            opacity: .54;
+            margin: auto;
+            width: fit-content !important;
+        }
+        &-message-card {
+            width: 60%;
+            box-sizing: border-box;
+            margin: 16px auto;
+
+            .mat-card-actions {
+                border-top: solid 1px #e7e7e7
+              }
+        }
+    }
+
+    .apw {
+        &-no-form-mat-card-actions {
+            & .mat-button {
+                border-radius: 5px;
+            }
+            & .mat-button-wrapper {
+                opacity: 0.54;
+                font-size: mat-font-size($config, body-2);
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media (max-width: 482px) {
+        .dw-message-card {
+            width: calc(100% - 32px);
+        }
+        .apw {
+            &-no-form-mat-card-actions {
+                padding-top: 10px !important;
+                padding-bottom: 23px !important;
+                padding-right: 23px !important;
+            }
+        }
+
+        .dw-no-form-message {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+
+    adf {
+        &-create-task-attachment {
+            position: absolute;
+            bottom: 10px;
+            right: 418px;
+        }
+
+        &-info-drawer {
+            height: 100%;
+
+            .mat-tab-body-wrapper {
+                overflow-y: auto;
+            }
+        }
+
+        &-task-header.assign-edit-view .adf-property[data-automation-id="header-assignee"] {
+            display: none;
+        }
+        &-task-header .adf-mapitem-clickable-value {
+            color: mat-color($primary);
+        }
+
+        &-task-header {
+            float: left;
+            width: 100%;
+        }
+
+        &-people {
+            float: left;
+            width: 100%;
+        }
+
+        &-task-header .adf-claim-controls {
+            color: mat-color($primary);
+            background: #eee;
+         }
+    }
+}
+
+adf-form .adf-form-container .mat-card {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    adf-form .adf-form-container .mat-card {
+        width: 90%;
+    }
+}

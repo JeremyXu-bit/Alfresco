@@ -1,0 +1,33 @@
+.mat-card-actions .mat-button:first-child {
+    margin-right: 20px
+}
+
+adf-create-task-attachment {
+    position: unset;
+}
+
+
+/* mobile phone */
+@media all and (max-width: 767px) {
+
+    apw-task-attachment .adf-data-table td:first-of-type, .adf-data-table th:first-of-type {
+        padding-left: 12px;
+    }
+
+    apw-task-attachment .adf-data-table .adf-data-table-cell .cell-container {
+        max-width: 140px !important;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    apw-task-attachment .adf-data-table td, .adf-data-table th {
+        padding: 0 8px 6px 8px;
+    }
+}
+
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    adf-create-task-attachment {
+        position: static;
+    }
+ }

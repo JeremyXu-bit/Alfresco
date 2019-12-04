@@ -1,0 +1,120 @@
+.dw {
+    &-task-toolbar-icon-container{
+        float: right;
+    }
+    &-task-toolbar-icon-container {
+        &>mat-icon {
+            padding: 16px 0px 15px 16px;
+            float: left;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+    &-task-toolbar-icon-container {
+        &>.mat-icon-button {
+            float: left;
+                & .mat-icon {
+                    padding: 14px 14px 14px 0px;
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+                &:hover {
+                    color: #ff9100;
+                }
+        }
+    }
+    &-task-toolbar-icon-container {
+        &>mat-icon {
+            &:hover{
+                color: #ff9100;
+            }
+        }
+    }
+    &-task-toolbar-icon-container {
+        &>.divider{
+            float: left;
+            width: 1px;
+            height: 51px;
+            border-right: 1px solid #e2e2e2;
+        }
+    }
+    &-toolbar-title {
+        float: left;
+        font-size: 14px;
+        padding: 10px 0px;
+        font-weight: 600;
+    }
+    &-toolbar-title {
+        &>span {
+            float: left;
+            line-height: 24px;
+            padding: 4px 0px;
+        }
+    }
+    &-toolbar-title{
+        &>mat-icon {
+            float: left;
+            padding: 4px 0px;
+        }
+    }
+    &-toolbar-title {
+        &>span {
+            &:last-child {
+                color: #000;
+                padding: 4px 0px;
+            }
+        }
+    }
+
+    &-toolbar-title--ellipsis {
+        max-width: 350px !important;
+        padding-right: 6px !important;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+      &-info-selected-action {
+        color: #ff9100 !important;
+      }
+}
+
+adf {
+    &-toolbar {
+        border: none !important;
+        float: left;
+        width: 100%
+    }
+    &-toolbar-title {
+        &>mat-icon {
+            height: 24px;
+            padding: 14px 10px;
+            float: left;
+            cursor: pointer;
+        }
+    }
+}
+
+adf-toolbar .mat-toolbar{
+    height: 48px !important;
+}
+
+@media (hover: none) {
+    .dw-task-toolbar-icon-container {
+        &>mat-icon {
+            &:hover{
+                color: inherit;
+            }
+        }
+    }
+}
+
+@media only screen
+and (max-width: 376px) {
+    .dw-task-toolbar-icon-container {
+        &>.mat-icon-button {
+            color: inherit !important;
+        }
+    }
+}

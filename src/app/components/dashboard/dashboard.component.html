@@ -1,0 +1,18 @@
+<div class="dw-template-container" fxLayout="column">
+    <adf-toolbar>
+        <adf-toolbar-title>
+            <apw-breadcrumbs></apw-breadcrumbs>
+        </adf-toolbar-title>
+        <div class="adf-toolbar--spacer"></div>
+        <apw-breadcrumb-actions [selectedAction]="getBreadcrumbActionName()" (infoClick)="toggleDashboardSettings()"></apw-breadcrumb-actions>
+    </adf-toolbar>
+
+    <div fxLayout="row" fxFlex="1 1 100%">
+        <div fxHide.xs="{{showSidebar}}" fxFlex>
+            <apw-process-statistics [reportQuery]="reportQuery"></apw-process-statistics>
+        </div>
+        <div class="dw-template__sidebar" fxHide="{{!showSidebar}}" fxFlex.gt-xs="{{sideBarWidth}}">
+            <apw-dashboard-settings [appId]="appId" (parameterChange)="onParameterChange($event)"></apw-dashboard-settings>
+        </div>
+    </div>
+</div>

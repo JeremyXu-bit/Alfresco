@@ -1,0 +1,18 @@
+@mixin apw-header-menu-theme($theme) {
+    $primary: map-get($theme, primary);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+
+
+    .adf-layout-header .mat-toolbar{
+        background: #ac7339;
+        a {
+            height: 30px;
+        }
+        .adf-app-layout {
+            &-menu-spacer {
+                flex: 1 1 auto;
+            }
+        }
+    }
+}

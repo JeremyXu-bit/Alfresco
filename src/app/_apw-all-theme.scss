@@ -1,0 +1,27 @@
+@import './components/layout/header/header.component';
+@import './components/layout/side-menu/side-menu.component';
+@import './components/layout/breadcrumbs/breadcrumbs-actions.component';
+@import './components/process-details/process-details-container.component';
+@import './components/task-details/task-form.component';
+@import './components/task-details/task-details-container.component';
+@import './components/dashboard/dashboard-settings.component';
+@import './components/dashboard/process-statistics.component';
+@import './components/setting/setting.component';
+@import './components/providers/providers.component';
+@import './components/layout/toolbar/dialog-confirmation.component';
+@import './components/apps/app-container.component';
+@import './about/about.component';
+
+@mixin apw-all-theme($theme) {
+    @include apw-header-menu-theme($theme);
+    @include apw-side-menu-theme($theme);
+    @include apw-breadcrumbs-actions-theme($theme);
+    @include apw-task-details-container-theme($theme);
+    @include apw-process-details-container-theme($theme);
+    @include apw-task-form-theme($theme);
+    @include apw-dashboard-settings-theme($theme);
+    @include apw-process-statistics-theme($theme);
+    @include apw-dialog-event-theme($theme);
+    @include apw-app-container($theme);
+    @include apw-about-component-theme($theme);
+}

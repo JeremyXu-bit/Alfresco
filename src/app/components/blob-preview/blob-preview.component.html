@@ -1,0 +1,11 @@
+<adf-viewer id="dw-viewer-id"
+    [(showViewer)]="showViewer"
+    [displayName]="content.name"
+    [blobFile]="content.contentBlob">
+    <adf-viewer-more-actions id="dw-viewer-more-action-id">
+        <button mat-menu-item (click)="downloadContent()">
+            <mat-icon>file_download</mat-icon>
+            <span>{{ 'ADF_VIEWER.ACTIONS.DOWNLOAD' | translate }}</span>
+        </button>
+    </adf-viewer-more-actions>
+</adf-viewer>

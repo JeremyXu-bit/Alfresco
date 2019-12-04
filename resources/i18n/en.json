@@ -1,0 +1,138 @@
+{
+    "DW-USER-PROFILE": {
+        "MENU": {
+            "SIGN-OUT": "Sign Out",
+            "PROFILE-SETTINGS": "Profile Settings",
+            "ABOUT": "About",
+            "LANGUAGES": "Languages"
+        }
+    },
+    "APP": {
+        "ABOUT": {
+            "VERSION": "Version:",
+            "LICENSE": {
+                "TITLE": "License",
+                "PROPERTY": "Property",
+                "VALUE": "Value"
+            },
+            "STATUS": {
+                "TITLE": "Status",
+                "PROPERTY": "Property",
+                "VALUE": "Value"
+            },
+            "PACKAGES": {
+                "TITLE": "Packages",
+                "NAME": "Name",
+                "VERSION": "Version"
+            }
+        }
+    },
+    "PROCESS-STATISTICS": {
+        "TITLE": "Process Statistics",
+        "COLUMNS": {
+            "ACTIVITY": "Activity",
+            "ACTIVE-COUNT": "Active Count",
+            "ACTIVE-AV-DURATION": "Average Duration",
+            "COMPLETE-COUNT": "Completed Count",
+            "COMPLETE-AV-DURATION": "Average Duration"
+        },
+        "MESSAGES": {
+            "TITLE":"No Dashboard Found",
+            "SUBTITLE":"Create a new dashboard that you want to easily view"
+        }
+    },
+    "DASHBOARD-SETTINGS": {
+        "TITLE": "Dashboard Settings",
+        "SUBTITLE": "Customise your dashboard",
+        "PROCESS-DEFINITION": "Process Definition",
+        "START-DATE": "Start Date",
+        "END-DATE": "End Date",
+        "STATUS": {
+            "LABEL": {
+                "TYPE": "Status"
+            },
+            "OPTIONS":{
+                "STATUS-ALL": "All",
+                "STATUS-ACTIVE": "Active",
+                "STATUS-COMPLETE": "Complete"
+            }
+        }
+    },
+    "DW-TOOLBAR": {
+        "TITLE": {
+            "ATTACHMENTS": "Attachments",
+            "NO-NAME": "Default name"
+        },
+        "TOOLTIP-INFO": {
+            "TASK-AUDIT": "Task Audit",
+            "PROCESS-AUDIT": "Process Audit",
+            "CANCEL-PROCESS": "Cancel Process",
+            "INFO": "Info"
+        }
+    },
+    "DW-MENU": {
+        "BUTTON": {
+            "CREATE": "CREATE",
+            "NEW-TASK": "New Task",
+            "NEW-PROCESS": "New Process"
+        },
+        "MENU": {
+            "CREATE": "Create",
+            "DASHBOARD": "Dashboard",
+            "TASKS": "Tasks",
+            "PROCESSES": "Processes"
+        }
+    },
+    "DW-BREADCRUMBS": {
+        "ROOT-KEY": "Workspace",
+        "ACTION-INFO-TOOLTIP":"Info",
+        "ENTRY-PROCESSES": "Processes",
+        "ENTRY-TASKS": "Tasks",
+        "ENTRY-DASHBOARD": "Dashboard",
+        "ENTRY-NEW-TASK": "New Task",
+        "ENTRY-NEW-PROCESS": "New Process"
+    },
+    "DW-HEADER": {
+            "APPS-DESKTOP": "Alfresco Process Services Workspace",
+            "APPS-TABLETS": "Process Services Workspace",
+            "APPS-MOBILES": "Workspace"
+    },
+    "DW-PROCESS-FORM": {
+            "DEFAULT-PROCESS-FILTER": "Running"
+    },
+    "DW-TASK-FORM": {
+        "DEFAULT-TASK-FILTER": "My Tasks",
+        "NO-FORM-MESSAGE": "No forms attached",
+        "COMPLETE-TASK-MESSAGE": "Task {{taskName}} completed",
+        "COMPLETE-TASK-SUB-MESSAGE": "No forms to be added",
+        "BUTTON": {
+            "COMPLETE": "COMPLETE",
+            "CANCEL": "CANCEL"
+        },
+        "OPERATIONS": {
+            "FORM-SAVED": "Form saved successfully",
+            "FORM-ATTACH": "Form Attached successfully",
+            "FORM-UPDATE": "Form Updated successfully",
+            "FORM-ERROR": "Could not attach form",
+            "FORM-COMPLETED": "The task has been completed"
+        }
+    },
+    "DW-DIALOG": {
+        "TASK-DIALOG": {
+                "TITLE": "Save or Discard the modified form",
+                "SAVE": "SAVE",
+                "DISCARD": "DISCARD"
+        },
+        "PROCESS-DIALOG": {
+                "TITLE": "Are you sure you want to cancel the process?",
+                "SUB-TITLE": "This will cancel all related tasks",
+                "ACTION-NO": "NO",
+                "ACTION-YES": "YES"
+        }
+    },
+    "PROVIDERS": {
+        "TITLE": "Providers",
+        "CONTENT-SERVICES": "Content Services",
+        "PROCESS-SERVICES": "Process Services"
+    }
+}

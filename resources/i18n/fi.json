@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Kirjaudu ulos",
+      "PROFILE-SETTINGS": "Profiiliasetukset",
+      "ABOUT": "Tietoja",
+      "LANGUAGES": "Kielet"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Versio:",
+      "LICENSE": {
+        "TITLE": "Käyttöoikeus",
+        "PROPERTY": "Ominaisuudet",
+        "VALUE": "Arvo"
+      },
+      "STATUS": {
+        "TITLE": "Tila",
+        "PROPERTY": "Ominaisuudet",
+        "VALUE": "Arvo"
+      },
+      "PACKAGES": {
+        "TITLE": "Paketit",
+        "NAME": "Nimi",
+        "VERSION": "Versio"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Prosessitilastot",
+    "COLUMNS": {
+      "ACTIVITY": "Toiminta",
+      "ACTIVE-COUNT": "Aktiivisten määrä",
+      "ACTIVE-AV-DURATION": "Keskimääräinen kesto",
+      "COMPLETE-COUNT": "Suoritettujen määrä",
+      "COMPLETE-AV-DURATION": "Keskimääräinen kesto"
+    },
+    "MESSAGES": {
+      "TITLE": "Koontinäyttöä ei löydy",
+      "SUBTITLE": "Luo uusi koontinäyttö, jota voit tarkastella helposti"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Koontinäyttöasetukset",
+    "SUBTITLE": "Mukauta koontinäyttöä",
+    "PROCESS-DEFINITION": "Prosessimääritelmä",
+    "START-DATE": "Alkamispäivä",
+    "END-DATE": "Päättymispäivä",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Tila"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Kaikki",
+        "STATUS-ACTIVE": "Aktiiviset",
+        "STATUS-COMPLETE": "Valmiit"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Liitteet",
+      "NO-NAME": "Oletusnimi"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Tehtävätarkastus",
+      "PROCESS-AUDIT": "Prosessitarkastus",
+      "CANCEL-PROCESS": "Peruuta prosessi",
+      "INFO": "Tiedot"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Luo",
+      "NEW-TASK": "Uusi tehtävä",
+      "NEW-PROCESS": "Uusi prosessi"
+    },
+    "MENU": {
+      "CREATE": "Luo",
+      "DASHBOARD": "Koontinäyttö",
+      "TASKS": "Tehtävät",
+      "PROCESSES": "Prosessit"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Työtila",
+    "ACTION-INFO-TOOLTIP": "Tiedot",
+    "ENTRY-PROCESSES": "Prosessit",
+    "ENTRY-TASKS": "Tehtävät",
+    "ENTRY-DASHBOARD": "Koontinäyttö",
+    "ENTRY-NEW-TASK": "Uusi tehtävä",
+    "ENTRY-NEW-PROCESS": "Uusi prosessi"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Käynnissä"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Omat tehtävät",
+    "NO-FORM-MESSAGE": "Ei liitettyjä lomakkeita",
+    "COMPLETE-TASK-MESSAGE": "Tehtävä {{taskName}} suoritettu",
+    "COMPLETE-TASK-SUB-MESSAGE": "Ei lisättäviä lomakkeita",
+    "BUTTON": {
+      "COMPLETE": "Tee valmiiksi",
+      "CANCEL": "Peruuta"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Lomake tallennettiin",
+      "FORM-ATTACH": "Lomake liitettiin",
+      "FORM-UPDATE": "Lomake päivitettiin",
+      "FORM-ERROR": "Lomakkeen liittäminen ei onnistu",
+      "FORM-COMPLETED": "Tehtävä on suoritettu"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Tallenna tai hylkää muokattu lomake",
+      "SAVE": "Tallenna",
+      "DISCARD": "Hylkää"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Haluatko varmasti peruuttaa prosessin?",
+      "SUB-TITLE": "Tämä peruuttaa kaikki liittyvät tehtävät",
+      "ACTION-NO": "Ei",
+      "ACTION-YES": "Kyllä"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Palvelut",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

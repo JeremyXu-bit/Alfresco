@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Logga ut",
+      "PROFILE-SETTINGS": "Profilinställningar",
+      "ABOUT": "Om",
+      "LANGUAGES": "Språk"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Version:",
+      "LICENSE": {
+        "TITLE": "Licens",
+        "PROPERTY": "Egenskap",
+        "VALUE": "Värde"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Egenskap",
+        "VALUE": "Värde"
+      },
+      "PACKAGES": {
+        "TITLE": "Paket",
+        "NAME": "Namn",
+        "VERSION": "Version"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Processtatistik",
+    "COLUMNS": {
+      "ACTIVITY": "Aktivitet",
+      "ACTIVE-COUNT": "Aktiv antal",
+      "ACTIVE-AV-DURATION": "Genomsnittlig varaktighet",
+      "COMPLETE-COUNT": "Slutfört antal",
+      "COMPLETE-AV-DURATION": "Genomsnittlig varaktighet"
+    },
+    "MESSAGES": {
+      "TITLE": "Ingen instrumentpanel hittades",
+      "SUBTITLE": "Skapa en ny instrumentpanel som du lätt kan se"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Instrumentpanelsinställningar",
+    "SUBTITLE": "Anpassa din instrumentpanel",
+    "PROCESS-DEFINITION": "Processdefinition",
+    "START-DATE": "Startdatum",
+    "END-DATE": "Slutdatum",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Alla",
+        "STATUS-ACTIVE": "Aktiv",
+        "STATUS-COMPLETE": "Slutförd"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Bilagor",
+      "NO-NAME": "Standardnamn"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Uppgiftsrevision",
+      "PROCESS-AUDIT": "Processrevision",
+      "CANCEL-PROCESS": "Avbryt process",
+      "INFO": "Info"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Skapa",
+      "NEW-TASK": "Ny uppgift",
+      "NEW-PROCESS": "Ny process"
+    },
+    "MENU": {
+      "CREATE": "Skapa",
+      "DASHBOARD": "Instrumentpanel",
+      "TASKS": "Uppgifter",
+      "PROCESSES": "Processer"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Arbetsområde",
+    "ACTION-INFO-TOOLTIP": "Info",
+    "ENTRY-PROCESSES": "Processer",
+    "ENTRY-TASKS": "Uppgifter",
+    "ENTRY-DASHBOARD": "Instrumentpanel",
+    "ENTRY-NEW-TASK": "Ny uppgift",
+    "ENTRY-NEW-PROCESS": "Ny process"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services-arbetsomårde",
+    "APPS-TABLETS": "Process Services-arbetsområde",
+    "APPS-MOBILES": "Arbetsområde"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Som kör"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Mina uppgifter",
+    "NO-FORM-MESSAGE": "Inga formulär bifogade",
+    "COMPLETE-TASK-MESSAGE": "Uppgift {{taskName}} slutförd",
+    "COMPLETE-TASK-SUB-MESSAGE": "Inga formulär ska läggas till",
+    "BUTTON": {
+      "COMPLETE": "Slutför",
+      "CANCEL": "Avbryt"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formuläret sparades",
+      "FORM-ATTACH": "Formulär bifogades",
+      "FORM-UPDATE": "Formulär uppdaterades",
+      "FORM-ERROR": "Kunde inte bifoga formulär",
+      "FORM-COMPLETED": "Uppgiften har slutförts"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Spara eller släng det modifierade formuläret",
+      "SAVE": "Spara",
+      "DISCARD": "Släng"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Är du säker på att du vill avbryta processen?",
+      "SUB-TITLE": "Detta kommer att avbryta alla relaterade uppgifter",
+      "ACTION-NO": "Nej",
+      "ACTION-YES": "Ja"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Leverantörer",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

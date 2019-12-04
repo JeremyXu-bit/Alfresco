@@ -1,0 +1,230 @@
+{
+    "$schema": "../config/schema/schema.json",
+    "ecmHost": "http://localhost:8080/",
+    "bpmHost": "http://localhost:8080/",
+    "providers": "BPM",
+    "authType": "BASIC",
+    "oauth2": {
+      "host": "http://localhost:30081/auth/realms/myrealm",
+      "clientId": "activiti",
+      "scope": "openid",
+      "secret": "",
+      "implicitFlow": true,
+      "silentLogin": true,
+      "redirectUri": "/#/app",
+      "redirectUriLogout": "/logout"
+    },
+    "application": {
+        "name": "Alfresco Process Workspace"
+    },
+
+    "pagination": {
+        "size": 25,
+        "supportedPageSizes": [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+    },
+
+    "landing-page": "dashboard/default",
+    "path-logo": "./assets/alfresco_apps_logo.png",
+    "locale":"en",
+    "languages": [
+        {
+            "key": "en",
+            "label": "English"
+        },
+        {
+            "key": "fr",
+            "label": "Français"
+        },
+        {
+            "key": "de",
+            "label": "Deutsch"
+        },
+        {
+            "key": "it",
+            "label": "Italiano"
+        },
+        {
+            "key": "es",
+            "label": "Español"
+        },
+        {
+            "key": "ja",
+            "label": "日本語"
+        },
+        {
+            "key": "nl",
+            "label": "Nederlands"
+        },
+        {
+            "key": "pt-BR",
+            "label": "Português (Brasil)"
+        },
+        {
+            "key": "nb",
+            "label": "Bokmål"
+        },
+        {
+            "key": "ru",
+            "label": "Русский"
+        },
+        {
+            "key": "zh-CN",
+            "label": "中文简体"
+        },
+        {
+            "key": "ar",
+            "label": "عربى"
+        },
+        {
+          "key": "cz",
+          "label": "Czech"
+        },
+        {
+          "key": "pl",
+          "label": "Polish"
+        },
+        {
+          "key": "fi",
+          "label": "Finnish"
+        },
+        {
+          "key": "da",
+          "label": "Danish"
+        },
+        {
+          "key": "sv",
+          "label": "Swedish"
+        }
+    ],
+    "sidebarBreakpoints": [
+        {
+            "breakpoints": [
+                "xs",
+                "sm"
+            ],
+            "mode": "over",
+            "position": "start",
+            "showMini": false,
+            "isHeaderInside": false
+        },
+        {
+            "breakpoints": [
+                "md",
+                "lg",
+                "xl"
+            ],
+            "mode": "side",
+            "position": "start",
+            "showMini": true,
+            "isHeaderInside": true
+        }
+    ],
+    "adf-start-process": {
+        "name": "",
+        "processDefinitionName": ""
+    },
+    "adf-task-list": {
+        "presets": {
+            "dw-task-list": [
+                {
+                    "key": "name",
+                    "type": "text",
+                    "title": "ADF_TASK_LIST.PROPERTIES.NAME",
+                    "cssClass": "adf-data-table-cell--ellipsis adf-data-table-cell--ellipsis__name",
+                    "sortable": true
+                },
+                {
+                    "key": "created",
+                    "type": "date",
+                    "title": "ADF_TASK_LIST.PROPERTIES.CREATED",
+                    "format": "timeAgo",
+                    "sortable": true
+                },
+                {
+                    "key": "priority",
+                    "type": "text",
+                    "title": "ADF_TASK_LIST.PROPERTIES.PRIORITY",
+                    "cssClass": "desktop-only",
+                    "sortable": true
+                }
+            ],
+            "dw-process-task-list": [
+                {
+                    "key": "name",
+                    "type": "text",
+                    "title": "ADF_TASK_LIST.PROPERTIES.TASK_NAME",
+                    "cssClass": "adf-data-table-cell--ellipsis adf-data-table-cell--ellipsis__name",
+                    "sortable": true
+                },
+                {
+                    "key": "dueDate",
+                    "type": "date",
+                    "title": "ADF_TASK_LIST.PROPERTIES.DUE_DATE",
+                    "cssClass": "desktop-only",
+                    "format": "timeAgo",
+                    "sortable": true
+                },
+                {
+                    "key": "processDefinitionName",
+                    "type": "text",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.PROCESS_NAME",
+                    "cssClass": "desktop-only",
+                    "sortable": true
+                }
+            ]
+        }
+    },
+    "adf-process-list": {
+        "presets": {
+            "running": [
+                {
+                    "key": "name",
+                    "type": "text",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.NAME",
+                    "cssClass": "adf-data-table-cell--ellipsis adf-data-table-cell--ellipsis__name",
+                    "sortable": true
+                },
+                {
+                    "key": "started",
+                    "type": "date",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.CREATED",
+                    "format": "timeAgo",
+                    "sortable": true
+                },
+                {
+                    "key": "processDefinitionCategory",
+                    "type": "text",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.CATEGORY",
+                    "cssClass": "desktop-only hidden",
+                    "sortable": true
+                }
+            ],
+            "completed": [
+                {
+                    "key": "name",
+                    "type": "text",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.NAME",
+                    "cssClass": "adf-data-table-cell--ellipsis adf-data-table-cell--ellipsis__name",
+                    "sortable": true
+                },
+                {
+                    "key": "started",
+                    "type": "date",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.CREATED",
+                    "format": "timeAgo",
+                    "sortable": true
+                },
+                {
+                    "key": "ended",
+                    "type": "date",
+                    "title": "ADF_PROCESS_LIST.PROPERTIES.END_DATE",
+                    "cssClass": "desktop-only",
+                    "sortable": true
+                }
+            ]
+        }
+    },
+    "adf-login": {
+        "copyrightText" : "\u00A9 2018 Alfresco Software, Inc. All Rights Reserved."
+    }
+}

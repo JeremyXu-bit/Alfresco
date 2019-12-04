@@ -1,0 +1,31 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/spec",
+        "baseUrl": "./",
+        "module": "commonjs",
+        "types": [
+            "jasmine",
+            "node"
+        ],
+        "paths": {
+            "alfresco-js-api": [
+                "../node_modules/alfresco-js-api/dist/alfresco-js-api.js"
+            ],
+            "rxjs/*": [
+                "../node_modules/rxjs/*"
+            ],
+            "@angular/*": [
+                "../node_modules/@angular/*"
+            ]
+        }
+    },
+    "files": [
+        "test.ts",
+        "polyfills.ts"
+    ],
+    "include": [
+        "**/*.spec.ts",
+        "**/*.d.ts"
+    ]
+}

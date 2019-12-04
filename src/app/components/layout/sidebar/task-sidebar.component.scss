@@ -1,0 +1,20 @@
+.dw {
+    &-task-sidebar-drawer {
+        width: 350px;
+        overflow-y: auto;
+    
+        adf-task-header {
+            word-break: break-all;
+            .adf-textitem-editable {
+                width: 100%
+            }
+        }
+    }
+    
+    &-task-sidebar {
+        min-height: 100%;
+        .adf-info-drawer-layout {
+            min-height: 100%;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Abmelden",
+      "PROFILE-SETTINGS": "Profileinstellungen",
+      "ABOUT": "Info",
+      "LANGUAGES": "Sprachen"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Version:",
+      "LICENSE": {
+        "TITLE": "Lizenz",
+        "PROPERTY": "Eigenschaften",
+        "VALUE": "Wert"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Eigenschaften",
+        "VALUE": "Wert"
+      },
+      "PACKAGES": {
+        "TITLE": "Pakete",
+        "NAME": "Name",
+        "VERSION": "Version"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Prozessstatistik",
+    "COLUMNS": {
+      "ACTIVITY": "Aktivität",
+      "ACTIVE-COUNT": "Aktiv",
+      "ACTIVE-AV-DURATION": "Durchschn. Dauer",
+      "COMPLETE-COUNT": "Abgeschlossen",
+      "COMPLETE-AV-DURATION": "Durchschn. Dauer"
+    },
+    "MESSAGES": {
+      "TITLE": "Kein Dashboard gefunden",
+      "SUBTITLE": "Erstelle ein Dashboard für eine einfache Übersicht"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Dashboard-Einstellungen",
+    "SUBTITLE": "Passen Sie Ihr Dashboard an",
+    "PROCESS-DEFINITION": "Prozessdefinition",
+    "START-DATE": "Startdatum",
+    "END-DATE": "Enddatum",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Alle",
+        "STATUS-ACTIVE": "Aktiv",
+        "STATUS-COMPLETE": "Abgeschlossen"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Anhänge",
+      "NO-NAME": "Standardname"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Aufgaben-Audit",
+      "PROCESS-AUDIT": "Prozess-Audit",
+      "CANCEL-PROCESS": "Prozess abbrechen",
+      "INFO": "Info"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Erstellen",
+      "NEW-TASK": "Neue Aufgabe",
+      "NEW-PROCESS": "Neuer Prozess"
+    },
+    "MENU": {
+      "CREATE": "Erstellen",
+      "DASHBOARD": "Dashboard",
+      "TASKS": "Aufgaben",
+      "PROCESSES": "Prozesse"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Info",
+    "ENTRY-PROCESSES": "Prozesse",
+    "ENTRY-TASKS": "Aufgaben",
+    "ENTRY-DASHBOARD": "Dashboard",
+    "ENTRY-NEW-TASK": "Neue Aufgabe",
+    "ENTRY-NEW-PROCESS": "Neuer Prozess"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Wird ausgeführt"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Meine Aufgaben",
+    "NO-FORM-MESSAGE": "Keine Formulare im Anhang",
+    "COMPLETE-TASK-MESSAGE": "Aufgabe {{taskName}} abgeschlossen",
+    "COMPLETE-TASK-SUB-MESSAGE": "Keine Formulare zum Hinzufügen",
+    "BUTTON": {
+      "COMPLETE": "Abschließen",
+      "CANCEL": "Abbrechen"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formular erfolgreich gespeichert",
+      "FORM-ATTACH": "Formular erfolgreich angehängt",
+      "FORM-UPDATE": "Formular erfolgreich aktualisiert",
+      "FORM-ERROR": "Formular konnte nicht angehängt werden",
+      "FORM-COMPLETED": "Die Aufgabe wurde abgeschlossen"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Bearbeitetes Formular speichern oder verwerfen",
+      "SAVE": "Speichern",
+      "DISCARD": "Verwerfen"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Sind Sie sicher, dass Sie den Prozess abbrechen möchten?",
+      "SUB-TITLE": "Dabei werden auch alle zugehörigen Aufgaben abgebrochen",
+      "ACTION-NO": "Nein",
+      "ACTION-YES": "Ja"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Provider",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

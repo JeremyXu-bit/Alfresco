@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Выйти",
+      "PROFILE-SETTINGS": "Параметры профиля",
+      "ABOUT": "О приложении",
+      "LANGUAGES": "Языки"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Версия:",
+      "LICENSE": {
+        "TITLE": "Лицензия",
+        "PROPERTY": "Свойства",
+        "VALUE": "Значение"
+      },
+      "STATUS": {
+        "TITLE": "Статус",
+        "PROPERTY": "Свойства",
+        "VALUE": "Значение"
+      },
+      "PACKAGES": {
+        "TITLE": "Пакеты",
+        "NAME": "Имя",
+        "VERSION": "Версия"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Статистика процесса",
+    "COLUMNS": {
+      "ACTIVITY": "Действие",
+      "ACTIVE-COUNT": "Кол-во акт.",
+      "ACTIVE-AV-DURATION": "Сред. длит. акт.",
+      "COMPLETE-COUNT": "Кол-во заверш.",
+      "COMPLETE-AV-DURATION": "Сред. длит. заверш."
+    },
+    "MESSAGES": {
+      "TITLE": "Главная странице не найдена",
+      "SUBTITLE": "Создать новую главную страницу для упрощённого просмотра"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Параметры глав. стр",
+    "SUBTITLE": "Настроить глав. страницу",
+    "PROCESS-DEFINITION": "Определение процесса",
+    "START-DATE": "Дата начала",
+    "END-DATE": "Дата окончания",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Статус"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Все",
+        "STATUS-ACTIVE": "Активные",
+        "STATUS-COMPLETE": "Завершить"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Вложения",
+      "NO-NAME": "Имя по умолчанию"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Аудит задачи",
+      "PROCESS-AUDIT": "Аудит процесса",
+      "CANCEL-PROCESS": "Отменить процесс",
+      "INFO": "Информация"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Создать",
+      "NEW-TASK": "Новая задача",
+      "NEW-PROCESS": "Нов. процесс"
+    },
+    "MENU": {
+      "CREATE": "Создать",
+      "DASHBOARD": "Глав. стр",
+      "TASKS": "Задачи",
+      "PROCESSES": "Процессы"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Информация",
+    "ENTRY-PROCESSES": "Процессы",
+    "ENTRY-TASKS": "Задачи",
+    "ENTRY-DASHBOARD": "Глав. стр",
+    "ENTRY-NEW-TASK": "Новая задача",
+    "ENTRY-NEW-PROCESS": "Нов. процесс"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Выполняются"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Мои задачи",
+    "NO-FORM-MESSAGE": "Нет прикрепленных форм",
+    "COMPLETE-TASK-MESSAGE": "Задача {{taskName}} завершена",
+    "COMPLETE-TASK-SUB-MESSAGE": "Нет форм для добавления",
+    "BUTTON": {
+      "COMPLETE": "Завершить",
+      "CANCEL": "Отмена"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Форма успешно сохранена",
+      "FORM-ATTACH": "Форма успешно прикреплена",
+      "FORM-UPDATE": "Форма успешно обновлена",
+      "FORM-ERROR": "Не удалось прикрепить форму",
+      "FORM-COMPLETED": "Задача была выполнена"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Сохранить или отменить изменение формы",
+      "SAVE": "Сохранить",
+      "DISCARD": "Отменить"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Вы действительно желаете отменить процесс?",
+      "SUB-TITLE": "Это отменит все связанные задачи",
+      "ACTION-NO": "Нет",
+      "ACTION-YES": "Да"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Провайдеры",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

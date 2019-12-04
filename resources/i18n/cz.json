@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Odhlásit se",
+      "PROFILE-SETTINGS": "Nastavení profilu",
+      "ABOUT": "O aplikaci",
+      "LANGUAGES": "Jazyky"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Verze:",
+      "LICENSE": {
+        "TITLE": "Licence",
+        "PROPERTY": "Vlastnost",
+        "VALUE": "Hodnota"
+      },
+      "STATUS": {
+        "TITLE": "Stav",
+        "PROPERTY": "Vlastnost",
+        "VALUE": "Hodnota"
+      },
+      "PACKAGES": {
+        "TITLE": "Balíčky",
+        "NAME": "Název",
+        "VERSION": "Verze"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Procesní statistiky",
+    "COLUMNS": {
+      "ACTIVITY": "Aktivita",
+      "ACTIVE-COUNT": "Počet aktivit",
+      "ACTIVE-AV-DURATION": "Průměrné trvání",
+      "COMPLETE-COUNT": "Počet dokončených",
+      "COMPLETE-AV-DURATION": "Průměrné trvání"
+    },
+    "MESSAGES": {
+      "TITLE": "Nenalezen žádný řídicí panel",
+      "SUBTITLE": "Pro lepší přehlednost vytvořte nový řídicí panel"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Nastavení řídicího panelu",
+    "SUBTITLE": "Přizpůsobit řídicí panel",
+    "PROCESS-DEFINITION": "Definice procesu",
+    "START-DATE": "Datum zahájení",
+    "END-DATE": "Datum ukončení",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Stav"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Vše",
+        "STATUS-ACTIVE": "Aktivní",
+        "STATUS-COMPLETE": "Dokončit"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Přílohy",
+      "NO-NAME": "Výchozí název"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Audit úkolu",
+      "PROCESS-AUDIT": "Audit procesu",
+      "CANCEL-PROCESS": "Zrušit proces",
+      "INFO": "Informace"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Vytvořit",
+      "NEW-TASK": "Nový úkol",
+      "NEW-PROCESS": "Nový proces"
+    },
+    "MENU": {
+      "CREATE": "Vytvořit",
+      "DASHBOARD": "Řídicí panel",
+      "TASKS": "Úkoly",
+      "PROCESSES": "Procesy"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Pracovní prostor",
+    "ACTION-INFO-TOOLTIP": "Informace",
+    "ENTRY-PROCESSES": "Procesy",
+    "ENTRY-TASKS": "Úkoly",
+    "ENTRY-DASHBOARD": "Řídicí panel",
+    "ENTRY-NEW-TASK": "Nový úkol",
+    "ENTRY-NEW-PROCESS": "Nový proces"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Pracovní prostor Alfresco Process Services",
+    "APPS-TABLETS": "Pracovní prostor Process Services",
+    "APPS-MOBILES": "Pracovní prostor"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Spuštěn"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Moje úkoly",
+    "NO-FORM-MESSAGE": "Nepřipojeny žádné formuláře",
+    "COMPLETE-TASK-MESSAGE": "Úkol {{taskName}} dokončen",
+    "COMPLETE-TASK-SUB-MESSAGE": "Žádné formuláře určené k připojení",
+    "BUTTON": {
+      "COMPLETE": "Dokončit",
+      "CANCEL": "Zrušit"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formulář byl úspěšně uložen",
+      "FORM-ATTACH": "Formulář byl úspěšně připojen",
+      "FORM-UPDATE": "Formulář byl úspěšně aktualizován",
+      "FORM-ERROR": "Formulář nelze připojit",
+      "FORM-COMPLETED": "Úkol byl úspěšně dokončen"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Uložení nebo zrušení změn formuláře",
+      "SAVE": "Uložit",
+      "DISCARD": "Zrušit"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Opravdu chcete proces zrušit?",
+      "SUB-TITLE": "Dojde ke zrušení všech souvisejících úkolů",
+      "ACTION-NO": "Ne",
+      "ACTION-YES": "Ano"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Poskytovatelé",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

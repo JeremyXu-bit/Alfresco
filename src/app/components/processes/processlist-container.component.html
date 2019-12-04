@@ -1,0 +1,33 @@
+ <div class="dw-template-container">
+    <adf-toolbar>
+        <adf-toolbar-title>
+            <apw-breadcrumbs></apw-breadcrumbs>
+        </adf-toolbar-title>
+        <div class="adf-toolbar--spacer"></div>
+        <apw-breadcrumb-actions fxHide.xs *ngIf="processContent$ | async" [selectedAction]="getBreadcrumbActionName()" (infoClick)="toggleInfoDrawer()"></apw-breadcrumb-actions>
+    </adf-toolbar>
+
+    <div class="dw-template-content-container">
+        <div class="dw-template-content">
+                <div class="dw-template-fixed-content">
+                    <apw-processlist-paginator *ngIf="processFilter?.filter"
+                        [currentFilter]="processFilter"
+                        (success)="onSuccessProcessList($event)"
+                        (rowClick)="onProcessRowSelect($event)"
+                        (rowDoubleClick)="onProcessRowDoubleClick($event)">
+                    </apw-processlist-paginator>
+            </div>
+        </div>
+        <ng-container *ngIf="showSidebar">
+            <div id="dw-processlist-sidebar-id" class="dw-template__sidebar">
+                <apw-process-sidebar
+                    [processInstanceDetails]="processInstanceDetails">
+                    <div>
+                        <mat-icon data-automation-id="expand" id="dw-processlist-sidebar-open-new-id" (click)="openProcessForm()">open_in_new</mat-icon>
+                        <mat-icon data-automation-id="close" (click)="closeProcessDetailsLayout()">close</mat-icon>
+                    </div>
+                </apw-process-sidebar>
+            </div>
+        </ng-container>
+    </div>
+</div>

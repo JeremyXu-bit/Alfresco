@@ -1,0 +1,32 @@
+
+<mat-card>
+    <mat-card-content>
+        <adf-upload-drag-area
+            [disabled]="isCompletedProcess()"
+            [rootFolderId]="processInstanceDetails?.id">
+            <adf-process-attachment-list #processAttachmentList
+                [disabled]="isCompletedProcess()"
+                [processInstanceId]="processInstanceDetails?.id"
+                (row-click)="onSingleClick($event)"
+                (attachmentClick)="onAttachmentClick($event)">
+                <adf-empty-list *ngIf="!isCompletedProcess()">
+                    <div adf-empty-list-header id="adf-empty-list-header-id" class="adf-empty-list-header">{{'ADF_PROCESS_LIST.PROCESS-ATTACHMENT.EMPTY.HEADER' | translate}}</div>
+                    <div id="adf-empty-list-body-id" adf-empty-list-body>
+                        <div fxHide.lt-md="true" id="adf-empty-list-body-drag-drop-id" class="adf-empty-list-drag_drop">{{'ADF_PROCESS_LIST.PROCESS-ATTACHMENT.EMPTY.DRAG-AND-DROP.TITLE' | translate}}</div>
+                        <div fxHide.lt-md="true" class="adf-empty-list__any-files-here-to-add">{{'ADF_PROCESS_LIST.PROCESS-ATTACHMENT.EMPTY.DRAG-AND-DROP.SUBTITLE' | translate}}</div>
+                    </div>
+                    <div fxHide.xs adf-empty-list-footer>
+                        <img class="adf-empty-list__empty_doc_lib" [src]="emptyListImageUrl">
+                    </div>
+                </adf-empty-list>
+            </adf-process-attachment-list>
+        </adf-upload-drag-area>
+    </mat-card-content>
+    <mat-card-actions *ngIf="showCreateAttachButton()" fxLayout="row" fxLayoutAlign="flex-end" >
+        <adf-create-process-attachment #createProcessAttachment id="dw-create-attachment-id"
+            [processInstanceId]="processInstanceDetails?.id"
+            (success)="onUploadSuccess()">
+        </adf-create-process-attachment>
+    </mat-card-actions>
+</mat-card>
+

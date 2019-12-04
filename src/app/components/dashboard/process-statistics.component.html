@@ -1,0 +1,27 @@
+<div data-automation-id="dashboard-report" class="dw-process-stat-container" [ngClass]="getDashboardClass()">
+    <h5 class="dw-report-title"> {{ 'PROCESS-STATISTICS.TITLE' | translate}}</h5>
+    <adf-datatable [data]="reportData" [loading]="showSpinner">
+        <no-content-template>
+            <ng-template>
+                <adf-empty-content
+                    icon="dashboard"
+                    [title]="'PROCESS-STATISTICS.MESSAGES.TITLE' | translate"
+                    [subtitle]="'PROCESS-STATISTICS.MESSAGES.SUBTITLE' | translate">
+                </adf-empty-content>
+            </ng-template>
+        </no-content-template>
+        <data-columns>
+            <data-column key="0" title="{{ 'PROCESS-STATISTICS.COLUMNS.ACTIVITY' | translate}}" class="adf-data-table-cell--ellipsis adf-data-table-cell--ellipsis__name"></data-column>
+            <data-column key="8" title="{{ 'PROCESS-STATISTICS.COLUMNS.ACTIVE-COUNT' | translate}}" class="dw-active-report-column"></data-column>
+            <data-column key="12" title="{{ 'PROCESS-STATISTICS.COLUMNS.ACTIVE-AV-DURATION' | translate}}" class="desktop-only dw-active-report-column"></data-column>
+            <data-column key="1" title="{{ 'PROCESS-STATISTICS.COLUMNS.COMPLETE-COUNT' | translate}}" class="dw-complete-report-column"></data-column>
+            <data-column key="5" title="{{ 'PROCESS-STATISTICS.COLUMNS.COMPLETE-AV-DURATION' | translate}}" class="desktop-only dw-complete-report-column"></data-column>
+        </data-columns>
+        <loading-content-template>
+            <ng-template>
+                <mat-progress-spinner class="adf-attachment-list-loading-margin" [color]="'primary'" [mode]="'indeterminate'">
+                </mat-progress-spinner>
+            </ng-template>
+        </loading-content-template>
+    </adf-datatable>
+</div>

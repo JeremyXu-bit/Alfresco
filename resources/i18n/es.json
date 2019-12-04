@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Cerrar sesión",
+      "PROFILE-SETTINGS": "Configuración de perfil",
+      "ABOUT": "Acerca de",
+      "LANGUAGES": "Idiomas"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Versión:",
+      "LICENSE": {
+        "TITLE": "Licencia",
+        "PROPERTY": "Propiedades",
+        "VALUE": "Valor"
+      },
+      "STATUS": {
+        "TITLE": "Estado",
+        "PROPERTY": "Propiedades",
+        "VALUE": "Valor"
+      },
+      "PACKAGES": {
+        "TITLE": "Paquetes",
+        "NAME": "Nombre",
+        "VERSION": "Versión"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Estadísticas de procesos",
+    "COLUMNS": {
+      "ACTIVITY": "Actividad",
+      "ACTIVE-COUNT": "Recuento activo",
+      "ACTIVE-AV-DURATION": "Promedio de duración",
+      "COMPLETE-COUNT": "Recuento completado",
+      "COMPLETE-AV-DURATION": "Promedio de duración"
+    },
+    "MESSAGES": {
+      "TITLE": "No se pudo encontrar el panel de inicio",
+      "SUBTITLE": "Cree un nuevo panel de inicio que desee visualizar fácilmente"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Configuración del panel de inicio",
+    "SUBTITLE": "Personalice su panel de inicio",
+    "PROCESS-DEFINITION": "Definición de procesos",
+    "START-DATE": "Fecha de inicio",
+    "END-DATE": "Fecha de fin",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Estado"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Todos",
+        "STATUS-ACTIVE": "Activo",
+        "STATUS-COMPLETE": "Completado"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Adjuntos",
+      "NO-NAME": "Nombre predeterminado"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Auditoría de tarea",
+      "PROCESS-AUDIT": "Auditoría de proceso",
+      "CANCEL-PROCESS": "Cancelar proceso",
+      "INFO": "Información"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Crear",
+      "NEW-TASK": "Nueva tarea",
+      "NEW-PROCESS": "Nuevo proceso"
+    },
+    "MENU": {
+      "CREATE": "Crear",
+      "DASHBOARD": "Panel de inicio",
+      "TASKS": "Tareas",
+      "PROCESSES": "Procesos"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Información",
+    "ENTRY-PROCESSES": "Procesos",
+    "ENTRY-TASKS": "Tareas",
+    "ENTRY-DASHBOARD": "Panel de inicio",
+    "ENTRY-NEW-TASK": "Nueva tarea",
+    "ENTRY-NEW-PROCESS": "Nuevo proceso"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Ejecutándose"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Mis tareas",
+    "NO-FORM-MESSAGE": "No hay formularios adjuntos",
+    "COMPLETE-TASK-MESSAGE": "Tarea {{taskName}} completada",
+    "COMPLETE-TASK-SUB-MESSAGE": "No se han añadido formularios",
+    "BUTTON": {
+      "COMPLETE": "Completar",
+      "CANCEL": "Cancelar"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formulario guardado correctamente",
+      "FORM-ATTACH": "Formulario adjuntado correctamente",
+      "FORM-UPDATE": "Formulario adjuntado correctamente",
+      "FORM-ERROR": "No se ha podido adjuntar el formulario",
+      "FORM-COMPLETED": "Se ha completado la tarea"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Guardar o Descartar el formulario modificado",
+      "SAVE": "Guardar",
+      "DISCARD": "Descartar"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "¿Está seguro de que desea cancelar el proceso?",
+      "SUB-TITLE": "Esto cancelará todas las tareas asociadas",
+      "ACTION-NO": "No",
+      "ACTION-YES": "Sí"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Proveedores",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

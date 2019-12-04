@@ -1,0 +1,31 @@
+<adf-info-drawer [selectedIndex]="selectedTab" class="dw-task-sidebar-drawer" (currentTab)="onCurrentTab($event)">
+    <div info-drawer-title>
+        <div *ngIf="hasTaskDetails()">{{taskDetails.name}}</div>
+    </div>
+    <div info-drawer-buttons>
+        <ng-content></ng-content>
+    </div>
+    <adf-info-drawer-tab label="{{ 'ADF_TASK_LIST.DETAILS.LABELS.INFO_DRAWER_TAB_DETAILS_TITLE' | translate }}" class="adf-tabs-drawer">
+        <div class="dw-task-details-sidebar-drawer" *ngIf="showAssignee">
+            <adf-people-search (searchPeople)="searchUser($event)" (success)="assignTaskToUser($event)" (closeSearch)="onCloseSearch()"
+                [results]="peopleSearch$">
+                <ng-container people-search-title>{{ 'ADF_TASK_LIST.DETAILS.LABELS.ADD_ASSIGNEE' | translate }}</ng-container>
+                <ng-container people-search-action-label>{{ 'ADF_TASK_LIST.PEOPLE.ADD_ASSIGNEE' | translate }}</ng-container>
+            </adf-people-search>
+        </div>
+        <adf-task-header *ngIf="hasTaskDetails()" [class]="getTaskHeaderViewClass()" [taskDetails]="taskDetails" [formName]="taskFormName"
+            (claim)="onClaim($event)" (unclaim)="onClaim($event)">
+        </adf-task-header>
+        <adf-people *ngIf="taskDetails?.id" [people]="taskPeople" [taskId]="taskDetails.id" [readOnly]="readOnlyForm">
+        </adf-people>
+    </adf-info-drawer-tab>
+
+    <adf-info-drawer-tab label="{{ 'ADF_TASK_LIST.DETAILS.LABELS.INFO_DRAWER_TAB_ACTIVITY_TITLE' | translate }}" class="adf-tabs-drawer">
+        <mat-card>
+            <mat-card-content>
+                <adf-comments *ngIf="hasTaskDetails()" [readOnly]="readOnlyForm" [taskId]="taskDetails.id" #activiticomments>
+                </adf-comments>
+            </mat-card-content>
+        </mat-card>
+    </adf-info-drawer-tab>
+</adf-info-drawer>

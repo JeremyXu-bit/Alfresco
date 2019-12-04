@@ -1,0 +1,34 @@
+.dw {
+
+    &-breadcrumb-container {
+        float: left;
+        padding: 9px 10px;
+    }
+          
+    &-breadcrumb-entry-container {
+        float: left;
+        color: #747474;
+
+        &:last-child {
+            color: #2f2f2f;
+            font-weight: 600;
+        }
+
+        &:last-child>div {
+            padding-top: 5px;
+            cursor: default !important;
+        }
+        &>div {
+            float: left;
+            padding-top: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+            
+    }
+    &-breadcrumb-entry-container>mat-icon {
+        float: left;
+        padding-top: 9px; 
+    }
+}
+

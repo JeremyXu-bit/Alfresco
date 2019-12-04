@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Sair",
+      "PROFILE-SETTINGS": "Configurações de perfil",
+      "ABOUT": "Sobre",
+      "LANGUAGES": "Idiomas"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Versão:",
+      "LICENSE": {
+        "TITLE": "Licença",
+        "PROPERTY": "Propriedades",
+        "VALUE": "Valor"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Propriedades",
+        "VALUE": "Valor"
+      },
+      "PACKAGES": {
+        "TITLE": "Pacotes",
+        "NAME": "Nome",
+        "VERSION": "Versão"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Estatísticas de processo",
+    "COLUMNS": {
+      "ACTIVITY": "Atividade",
+      "ACTIVE-COUNT": "Ativas",
+      "ACTIVE-AV-DURATION": "Duração média",
+      "COMPLETE-COUNT": "Concluídas",
+      "COMPLETE-AV-DURATION": "Duração média"
+    },
+    "MESSAGES": {
+      "TITLE": "Nenhum painel encontrado",
+      "SUBTITLE": "Crie um painel novo que você possa ver com facilidade"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Configurações de painel",
+    "SUBTITLE": "Personalize seu painel",
+    "PROCESS-DEFINITION": "Definição de processo",
+    "START-DATE": "Data de início",
+    "END-DATE": "Data de término",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Todos",
+        "STATUS-ACTIVE": "Ativo",
+        "STATUS-COMPLETE": "Concluído"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Anexos",
+      "NO-NAME": "Nome padrão"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Auditoria da tarefa",
+      "PROCESS-AUDIT": "Auditoria do processo",
+      "CANCEL-PROCESS": "Cancelar processo",
+      "INFO": "Informações"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Criar",
+      "NEW-TASK": "Nova tarefa",
+      "NEW-PROCESS": "Novo processo"
+    },
+    "MENU": {
+      "CREATE": "Criar",
+      "DASHBOARD": "Painel",
+      "TASKS": "Tarefas",
+      "PROCESSES": "Processos"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Informações",
+    "ENTRY-PROCESSES": "Processos",
+    "ENTRY-TASKS": "Tarefas",
+    "ENTRY-DASHBOARD": "Painel",
+    "ENTRY-NEW-TASK": "Nova tarefa",
+    "ENTRY-NEW-PROCESS": "Novo processo"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Em execução"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Minhas tarefas",
+    "NO-FORM-MESSAGE": "Não há nenhum formulário anexado",
+    "COMPLETE-TASK-MESSAGE": "Tarefa {{taskName}} concluída",
+    "COMPLETE-TASK-SUB-MESSAGE": "Não há nenhum formulário a ser adicionado",
+    "BUTTON": {
+      "COMPLETE": "Concluir",
+      "CANCEL": "Cancelar"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formulário salvo com sucesso",
+      "FORM-ATTACH": "Formulário anexado com sucesso",
+      "FORM-UPDATE": "Formulário atualizado com sucesso",
+      "FORM-ERROR": "Não foi possível anexar o formulário",
+      "FORM-COMPLETED": "Tarefa concluída"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Salvar ou descartar o formulário modificado",
+      "SAVE": "Salvar",
+      "DISCARD": "Descartar"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Tem certeza de que deseja cancelar o processo?",
+      "SUB-TITLE": "Isso cancelará todas as tarefas associadas",
+      "ACTION-NO": "No",
+      "ACTION-YES": "Sì"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Provedores",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

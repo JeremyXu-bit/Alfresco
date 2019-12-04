@@ -1,0 +1,49 @@
+.dw {
+    &-dt-col-4 {
+        max-width: 256px !important;
+    }
+
+    &-dt-col-3 {
+        max-width: 192px !important;
+    }
+
+    &-dt-col-2 {
+        max-width: 128px !important;
+    }
+}
+
+adf {
+    &-process-instance-list {
+        .adf-data-table {
+            border: none !important;
+        }
+    }
+
+    &-info-drawer {
+        .dw-process-list-infodrawer-header-container {
+            word-break: break-all;
+        }
+    }
+
+    &-toolbar .mat-toolbar {
+        border: none !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+        height: 48px !important;
+    }
+}
+
+.dw-process-details-sidebar-drawer .adf-info-drawer-layout {
+    min-height: 100%;
+}
+
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    apw-processlist-container .dw-template-content {
+        display: block;
+    }
+
+    //Workaround for first column values move downwards of the screen when info drawer is open https://issues.alfresco.com/jira/browse/DW-979
+    .adf-data-table-cell--ellipsis__name .adf-datatable-cell {
+        position: fixed !important;
+    }
+ }

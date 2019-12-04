@@ -1,0 +1,72 @@
+@mixin apw-process-statistics-theme($theme) {
+
+    $background: map-get($theme, background);
+    
+    apw-process-statistics {
+        overflow-x: auto;
+    }
+    apw-dashboard {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 600px){
+            height: calc(100% - 64px)!important;
+        }
+    }
+
+    .dw {
+        &-process-stat-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: mat-color($background, dialog);
+
+            adf-datatable {
+                height: 85%;
+
+                .adf-data-table {
+                    border: none;
+                    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    
+                    .adf-data-table-cell--text {
+                        width: 100%;
+                    }
+
+                    th {
+                        font-weight: normal;
+                        font-size: 14px;
+                        opacity: .54;
+                    }
+                }
+            }
+
+            .is-selected {
+                background: #e0f7fa !important;
+            }
+        }
+
+        &-report-title {
+            padding: 0 0 0 24px;
+        }
+
+        &-active-report {
+            .dw-complete-report-column{
+                display: none;
+            }
+        }
+
+        &-complete-report {
+            .dw-active-report-column{
+                display: none;
+            }
+        }
+
+    }
+
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+        apw-dashboard {
+            display: inline;
+        }
+    }
+}

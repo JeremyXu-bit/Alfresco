@@ -1,0 +1,32 @@
+<div *ngIf="currentFilter?.filter" fxLayout="column" fxLayoutAlign="space-between stretch" class="task-list-container">
+    <adf-tasklist #taskList data-automation-id="tasklist-table"
+        [appId]="currentFilter.appId"
+        [presetColumn]="presetColoum"
+        [size]="paginationPageSize"
+        [selectionMode]="selectionMode"
+        [processDefinitionId]="currentFilter.filter.processDefinitionKey"
+        [name]="currentFilter.filter.name"
+        [assignment]="currentFilter.filter.assignment"
+        [state]="currentFilter.filter.state"
+        [sort]="currentFilter.filter.sort"
+        [data]="dataTasks"
+        (success)="onSuccessTaskList($event)"
+        (row-click)="onRowClick($event)"
+        (row-dblclick)="onRowDoubleClick($event)"
+        #taskList>
+            <data-columns>
+                    <data-column key="assignee" type="text" [sortable]="false" title="ADF_TASK_LIST.PROPERTIES.ASSIGNEE" class="desktop-only adf-data-table-cell--ellipsis">
+                        <ng-template let-entry="$implicit">
+                            <div title="{{entry.row.obj.assignee | fullName}}">{{entry.row.obj.assignee | fullName}}</div>
+                        </ng-template>
+                    </data-column>
+            </data-columns>
+    </adf-tasklist>
+    <adf-pagination
+        *ngIf="taskList"
+        [target]="taskList"
+        [supportedPageSizes]="supportedPageSizes"
+        (changePageSize)="onChangePageSize($event)"
+        #taskListPagination>
+    </adf-pagination>
+</div>

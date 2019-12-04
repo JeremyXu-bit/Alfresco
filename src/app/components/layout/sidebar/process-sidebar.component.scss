@@ -1,0 +1,16 @@
+.dw {
+    &-process-instance-header-container {
+        word-break: break-all; 
+    }
+    &-process-sidebar-drawer {
+        width: 350px;
+        overflow-y: auto;
+    }
+    
+    &-process-sidebar {
+        height: 100%;
+        .adf-info-drawer-layout {
+            min-height: 100%;
+        }
+    }
+}

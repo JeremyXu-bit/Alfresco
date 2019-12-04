@@ -1,0 +1,29 @@
+<div fxLayout="column" fxLayoutAlign="space-between stretch" class="process-list-container">
+    <adf-process-instance-list #processInstanceList id="apw-process-list-id" data-automation-id="process-list"
+        [appId]="currentFilter?.appId"
+        [presetColumn]="getProcessListSchema()"
+        [processDefinitionId]="currentFilter?.filter?.processDefinitionKey"
+        [state]="currentFilter?.filter?.state"
+        [sort]="currentFilter?.filter?.sort"
+        [data]="dataProcesses"
+        [size]="paginationPageSize"
+        (row-click)="onRowClick($event)"
+        (row-dblclick)="onRowDoubleClick($event)"
+        (success)="onSuccessProcessList($event)">
+
+        <data-columns>
+            <data-column key="startedBy" title="ADF_PROCESS_LIST.PROPERTIES.CREATED_BY" [sortable]="false" class="desktop-only adf-data-table-cell--ellipsis">
+                <ng-template let-entry="$implicit">
+                    <div title="{{entry.row.obj.startedBy  | fullName}}">{{entry.row.obj.startedBy  | fullName}}</div>
+                </ng-template>
+            </data-column>
+        </data-columns>
+    </adf-process-instance-list>
+    <adf-pagination
+        *ngIf="processInstanceList"
+        [target]="processInstanceList"
+        [supportedPageSizes]="supportedPageSizes"
+        (changePageSize)="onChangePageSize($event)"
+        #processListPagination>
+    </adf-pagination>
+</div>

@@ -1,0 +1,7 @@
+<div class="apw-dialog-confirm">
+  <div class="apw-dialog-confirm-title" mat-dialog-title>{{dialogContent.title}}</div>
+  <mat-dialog-content>{{dialogContent.subTitle}}</mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button *ngFor = "let action of dialogContent.actions" [color]="action.color" (click)="onClick(action.key)">{{action.label}}</button>
+  </mat-dialog-actions>
+</div>

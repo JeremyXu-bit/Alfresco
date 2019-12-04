@@ -1,0 +1,20 @@
+<adf-layout-header  id="adf-header"
+                    [color]="color"
+                    [showSidenavToggle]="showMenu"
+                    [title]="title | translate"
+                    [logo]="logoPath"
+                    (clicked)=toggleMenu()>
+
+    <span id='mobile-title' fxHide.gt-xs>{{ title | translate }}</span>
+
+    <div class="adf-app-layout-menu-spacer"></div>
+
+    <adf-userinfo fxHide.xs
+        class="adf-app-layout-user-profile"
+        [menuPositionX]="'before'"
+        [menuPositionY]="'above'">
+    </adf-userinfo> 
+
+    <apw-user-profile-menu (onMenuClick)="onUserMenuSelect($event)"></apw-user-profile-menu>
+</adf-layout-header>
+    

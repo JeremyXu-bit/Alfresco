@@ -1,0 +1,36 @@
+@mixin apw-breadcrumbs-actions-theme($theme) {
+
+    $dw-icon-font-size: 20px;
+    $dw-icon-padding: 13px 8px;
+
+  .dw {
+      &-breadcrumb-action-container {
+        float: right;
+        &>mat-icon{
+          color: #747474;
+          padding: $dw-icon-padding;
+          font-size: $dw-icon-font-size;
+          cursor: pointer;
+          text-align: center;
+          margin-left: 10px;
+            &:hover {
+              color: mat-color($primary);
+            }
+        } 
+      }
+      &-divider {
+        float: left;
+        width: 1px;
+        height: 48px;
+        border-right: 1px solid #e2e2e2;
+      }
+
+      &-info-selected-action {
+        color: mat-color($primary) !important;
+      }
+  }
+}
+
+@media (hover: none) {
+    mat-icon:hover { color: inherit; }
+}

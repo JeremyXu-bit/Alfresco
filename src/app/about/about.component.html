@@ -1,0 +1,12 @@
+<div class="main-content">
+    <article>
+        <h1>{{ 'application.name' | adfAppConfig }}</h1>
+        <h4>{{ 'APP.ABOUT.VERSION' | translate }} {{ releaseVersion }}</h4>
+        <a [href]="githubUrlCommitSha">{{githubUrlCommitSha}}</a>
+    </article>
+
+    <article *ngIf="dependencyEntries">
+        <header>{{ 'APP.ABOUT.PACKAGES.TITLE' | translate }}</header>
+        <apw-package-list [data]="dependencyEntries"></apw-package-list>
+    </article>
+</div>    

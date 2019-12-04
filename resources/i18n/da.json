@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Log af",
+      "PROFILE-SETTINGS": "Indstillinger for profil",
+      "ABOUT": "Om",
+      "LANGUAGES": "Sprog"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Version:",
+      "LICENSE": {
+        "TITLE": "Licens",
+        "PROPERTY": "Egenskab",
+        "VALUE": "Værdi"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Egenskab",
+        "VALUE": "Værdi"
+      },
+      "PACKAGES": {
+        "TITLE": "Pakker",
+        "NAME": "Navn",
+        "VERSION": "Version"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Statistikoplysninger for proces",
+    "COLUMNS": {
+      "ACTIVITY": "Aktivitet",
+      "ACTIVE-COUNT": "Antal aktive",
+      "ACTIVE-AV-DURATION": "Gennemsnitlig varighed",
+      "COMPLETE-COUNT": "Antal fuldførte",
+      "COMPLETE-AV-DURATION": "Gennemsnitlig varighed"
+    },
+    "MESSAGES": {
+      "TITLE": "Der blev ikke fundet et dashboard",
+      "SUBTITLE": "Opret et nyt dashboard, som du nemt kan få vist"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Indstillinger for dashboard",
+    "SUBTITLE": "Tilpas dit dashboard",
+    "PROCESS-DEFINITION": "Procesdefinition",
+    "START-DATE": "Startdato",
+    "END-DATE": "Slutdato",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Alle",
+        "STATUS-ACTIVE": "Aktive",
+        "STATUS-COMPLETE": "Fuldført"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Vedhæftede filer",
+      "NO-NAME": "Standardnavn"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Opgaveovervågning",
+      "PROCESS-AUDIT": "Overvågning af proces",
+      "CANCEL-PROCESS": "Annuller proces",
+      "INFO": "Oplysninger"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Opret",
+      "NEW-TASK": "Ny opgave",
+      "NEW-PROCESS": "Ny proces"
+    },
+    "MENU": {
+      "CREATE": "Opret",
+      "DASHBOARD": "Dashboard",
+      "TASKS": "Opgaver",
+      "PROCESSES": "Processer"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Arbejdsområde",
+    "ACTION-INFO-TOOLTIP": "Oplysninger",
+    "ENTRY-PROCESSES": "Processer",
+    "ENTRY-TASKS": "Opgaver",
+    "ENTRY-DASHBOARD": "Dashboard",
+    "ENTRY-NEW-TASK": "Ny opgave",
+    "ENTRY-NEW-PROCESS": "Ny proces"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services-arbejdsområde",
+    "APPS-TABLETS": "Process Services-arbejdsområde",
+    "APPS-MOBILES": "Arbejdsområde"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Kører"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Mine opgaver",
+    "NO-FORM-MESSAGE": "Der er ikke vedhæftet en formular",
+    "COMPLETE-TASK-MESSAGE": "Opgaven {{taskName}} er fuldført",
+    "COMPLETE-TASK-SUB-MESSAGE": "Der er ikke tilføjet nogen formularer",
+    "BUTTON": {
+      "COMPLETE": "Fuldført",
+      "CANCEL": "Annuller"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Formularen er gemt",
+      "FORM-ATTACH": "Formularen blev vedhæftet",
+      "FORM-UPDATE": "Formularen blev opdateret",
+      "FORM-ERROR": "Formularen kunne ikke vedhæftes",
+      "FORM-COMPLETED": "Opgaven er fuldført"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Gem eller kassér den ændrede formular",
+      "SAVE": "Gem",
+      "DISCARD": "Kassér"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Er du sikker på, at du vil annullere processen?",
+      "SUB-TITLE": "Dette vil annullere alle relaterede opgaver",
+      "ACTION-NO": "Nej",
+      "ACTION-YES": "Ja"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Udbydere",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

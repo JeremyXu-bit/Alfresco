@@ -1,0 +1,22 @@
+<div fxHide.xs *ngIf="crumbs" class="dw-breadcrumb-container">
+    <div class="dw-breadcrumb-entry-container" *ngFor="let crumb of crumbs; let l = last;">
+        <div class="dw-crumb-fragment" id="dw-crumb-entry" (click)="moveToCrumb(crumb, l)">{{crumb.getName() | translate}}</div>
+        <mat-icon *ngIf="!l">chevron_right</mat-icon>
+    </div>
+</div>
+
+<div fxHide fxShow.xs *ngIf="crumbs" class="dw-breadcrumb-container">
+    <div class="dw-breadcrumb-entry-container">
+        <mat-icon [matMenuTriggerFor]="crumbMenu">home</mat-icon>
+        <mat-menu #crumbMenu="matMenu" [overlapTrigger]="false">
+            <span *ngFor="let crumb of crumbs; let l = last;">
+                <button *ngIf="!l" mat-menu-item (click)="moveToCrumb(crumb)">
+                    {{crumb.getName() | translate}}
+                </button>
+            </span>
+        </mat-menu>
+        <mat-icon>chevron_right</mat-icon>
+        <div class="dw-crumb-fragment" id="dw-crumb-entry" (click)="moveToCrumb(crumbs[crumbs.length - 1])">{{crumbs[crumbs.length - 1].getName() | translate}}</div>
+    </div>
+    
+</div>

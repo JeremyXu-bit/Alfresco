@@ -1,0 +1,41 @@
+<div class="dw-dashboard-settings">
+    <div id="dashboard-setting-title-id" class="dw-dashboard-settings-title">{{ 'DASHBOARD-SETTINGS.TITLE' | translate }}</div>
+    <mat-card>
+        <div id="dashboard-setting-subtitle-id" class="dw-dashboard-settings-subtitle">{{ 'DASHBOARD-SETTINGS.SUBTITLE' | translate }}</div>
+        <mat-card-content>
+            <label class="dw-dashboard-label">{{ 'DASHBOARD-SETTINGS.PROCESS-DEFINITION' | translate }}</label>
+            <mat-select id="select-processDef-id" class="dw-full-width-field" [(ngModel)]="processDefinitionId" (selectionChange)="emitReportParam()">
+                <mat-option *ngFor="let processDef of processDefinitions" [value]="processDef.id">
+                    {{ processDef.name }} (v{{ processDef.version }})
+                </mat-option>
+            </mat-select>
+            <label class="dw-dashboard-label">{{ 'DASHBOARD-SETTINGS.STATUS.LABEL.TYPE' | translate }}</label>
+            <mat-select id="select-processdef-status-id" class="dw-full-width-field" [(ngModel)]="status" (selectionChange)="emitReportParam()">
+                <mat-option *ngFor="let status of statuses" [value]="status.id">
+                    {{ status.desc | translate}}
+                </mat-option>
+            </mat-select>
+            
+            <div class="dw-dashboard-half-width-item">
+                <label  id="fromdate-lable-id" class="dw-dashboard-label">{{ 'DASHBOARD-SETTINGS.START-DATE' | translate }}</label>
+            </div>
+            <div class="dw-dashboard-half-width-item">
+                <label  class="dw-dashboard-label">{{ 'DASHBOARD-SETTINGS.END-DATE' | translate }}</label>
+            </div>
+            <mat-form-field class="dw-dashboard-half-width-item">
+                <input id="fromdate-id" matInput [matDatepicker]="pickerFrom" [(ngModel)]="fromDate"
+                (dateChange)="emitReportParam()">
+                <mat-datepicker-toggle matSuffix [for]="pickerFrom"></mat-datepicker-toggle>
+                <mat-datepicker #pickerFrom>
+            </mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="dw-dashboard-half-width-item">
+                <input id="todate-id" matInput [matDatepicker]="pickerTo" [(ngModel)]="toDate"
+                (dateChange)="emitReportParam()">
+                <mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
+                <mat-datepicker #pickerTo>
+            </mat-datepicker>
+            </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+</div>

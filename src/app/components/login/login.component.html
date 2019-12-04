@@ -1,0 +1,15 @@
+<!--LOGIN-->
+
+<adf-login #alfrescologin
+                [fieldsValidation]="customValidation"
+                [showLoginActions]="false"
+                [copyrightText]="copyrightText"
+                (executeSubmit)="validateForm($event)"
+                (success)="onLogin($event)"
+                (error)="onError($event)">
+    <!-- <adf-login-header>
+      <ng-template>
+          <h3>登录</h3>
+      </ng-template>
+    </adf-login-header> -->
+</adf-login>

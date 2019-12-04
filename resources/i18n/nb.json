@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "Logg ut",
+      "PROFILE-SETTINGS": "Profilinnstillinger",
+      "ABOUT": "Om",
+      "LANGUAGES": "Språk"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "Versjon:",
+      "LICENSE": {
+        "TITLE": "Lisens",
+        "PROPERTY": "Egenskaper",
+        "VALUE": "Verdi"
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "PROPERTY": "Egenskaper",
+        "VALUE": "Verdi"
+      },
+      "PACKAGES": {
+        "TITLE": "Pakker",
+        "NAME": "Navn",
+        "VERSION": "Versjon"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "Prosesstatistikk",
+    "COLUMNS": {
+      "ACTIVITY": "Aktivitet",
+      "ACTIVE-COUNT": "Antall aktive",
+      "ACTIVE-AV-DURATION": "Gjennomsnittlig varighet",
+      "COMPLETE-COUNT": "Antall fullført",
+      "COMPLETE-AV-DURATION": "Gjennomsnittlig varighet"
+    },
+    "MESSAGES": {
+      "TITLE": "Finner ingen dashboard",
+      "SUBTITLE": "Opprett et nytt dashboard som du vil ha enkel tilgang til"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "Instilllinger dashbord",
+    "SUBTITLE": "Tilpass dashbord",
+    "PROCESS-DEFINITION": "Prosessdefinisjon",
+    "START-DATE": "Startdato",
+    "END-DATE": "Sluttdato",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "Status"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "Alle",
+        "STATUS-ACTIVE": "Aktiv",
+        "STATUS-COMPLETE": "Fullfør"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "Vedlegg",
+      "NO-NAME": "Standardnavn"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "Oppgaverevisjon",
+      "PROCESS-AUDIT": "Behandle revisjon",
+      "CANCEL-PROCESS": "Avbryt prosess",
+      "INFO": "Info"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "Opprett",
+      "NEW-TASK": "Ny oppgave",
+      "NEW-PROCESS": "Ny prosess"
+    },
+    "MENU": {
+      "CREATE": "Opprett",
+      "DASHBOARD": "Dashboard",
+      "TASKS": "Oppgaver",
+      "PROCESSES": "Prosesser"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "Info",
+    "ENTRY-PROCESSES": "Prosesser",
+    "ENTRY-TASKS": "Oppgaver",
+    "ENTRY-DASHBOARD": "Dashboard",
+    "ENTRY-NEW-TASK": "Ny oppgave",
+    "ENTRY-NEW-PROCESS": "Ny prosess"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "Kjører"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "Mine oppgaver",
+    "NO-FORM-MESSAGE": "Ingen skjemaer vedlagt",
+    "COMPLETE-TASK-MESSAGE": "Oppgave {{taskName}} fullført",
+    "COMPLETE-TASK-SUB-MESSAGE": "Ingen skjemaer å legge til",
+    "BUTTON": {
+      "COMPLETE": "Fullfør",
+      "CANCEL": "Avbryt"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "Skjema lagret vellykket",
+      "FORM-ATTACH": "Skjema er lagt ved",
+      "FORM-UPDATE": "Skjema er oppdatert",
+      "FORM-ERROR": "Kunne ikke legge ved skjema",
+      "FORM-COMPLETED": "Oppgaven er fullført"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "Lagre eller Forkast det endrede skjemaet",
+      "SAVE": "Lagre",
+      "DISCARD": "Forkast"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "Er du sikker på at du vil avbryte prosessen?",
+      "SUB-TITLE": "Dette vil avbryte alle relaterte oppgaver",
+      "ACTION-NO": "Nei",
+      "ACTION-YES": "Ja"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "Leverandører",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

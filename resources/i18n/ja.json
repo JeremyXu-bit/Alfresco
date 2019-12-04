@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "サインアウト",
+      "PROFILE-SETTINGS": "プロフィールの設定",
+      "ABOUT": "バージョン情報",
+      "LANGUAGES": "言語"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "バージョン:",
+      "LICENSE": {
+        "TITLE": "ライセンス",
+        "PROPERTY": "プロパティ",
+        "VALUE": "値"
+      },
+      "STATUS": {
+        "TITLE": "ステータス",
+        "PROPERTY": "プロパティ",
+        "VALUE": "値"
+      },
+      "PACKAGES": {
+        "TITLE": "パッケージ",
+        "NAME": "名前",
+        "VERSION": "バージョン"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "プロセスの統計データ",
+    "COLUMNS": {
+      "ACTIVITY": "アクティビティ",
+      "ACTIVE-COUNT": "アクティブ数",
+      "ACTIVE-AV-DURATION": "平均アクティブ時間",
+      "COMPLETE-COUNT": "完了済み数",
+      "COMPLETE-AV-DURATION": "平均完了時間"
+    },
+    "MESSAGES": {
+      "TITLE": "ダッシュボードが見つかりません",
+      "SUBTITLE": "情報が見やすくなる新しいダッシュボードを作成します"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "ダッシュボードの設定",
+    "SUBTITLE": "ダッシュボードのカスタマイズ",
+    "PROCESS-DEFINITION": "プロセス定義",
+    "START-DATE": "開始日",
+    "END-DATE": "終了日",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "ステータス"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "すべて",
+        "STATUS-ACTIVE": "アクティブ",
+        "STATUS-COMPLETE": "完了"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "添付ファイル",
+      "NO-NAME": "デフォルトの名前"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "タスクの監査",
+      "PROCESS-AUDIT": "プロセスの監査",
+      "CANCEL-PROCESS": "プロセスのキャンセル",
+      "INFO": "情報"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "作成",
+      "NEW-TASK": "新しいタスク",
+      "NEW-PROCESS": "新しいプロセス"
+    },
+    "MENU": {
+      "CREATE": "作成",
+      "DASHBOARD": "ダッシュボード",
+      "TASKS": "タスク",
+      "PROCESSES": "プロセス"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "Workspace",
+    "ACTION-INFO-TOOLTIP": "情報",
+    "ENTRY-PROCESSES": "プロセス",
+    "ENTRY-TASKS": "タスク",
+    "ENTRY-DASHBOARD": "ダッシュボード",
+    "ENTRY-NEW-TASK": "新しいタスク",
+    "ENTRY-NEW-PROCESS": "新しいプロセス"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "Alfresco Process Services Workspace",
+    "APPS-TABLETS": "Process Services Workspace",
+    "APPS-MOBILES": "Workspace"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "進行中"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "あなたのタスク",
+    "NO-FORM-MESSAGE": "フォームが添付されていません",
+    "COMPLETE-TASK-MESSAGE": "タスク ''{{taskName}}'' が完了しました",
+    "COMPLETE-TASK-SUB-MESSAGE": "フォームは追加されません",
+    "BUTTON": {
+      "COMPLETE": "完了",
+      "CANCEL": "キャンセル"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "フォームが保存されました",
+      "FORM-ATTACH": "フォームが添付されました",
+      "FORM-UPDATE": "フォームが更新されました",
+      "FORM-ERROR": "フォームを添付できませんでした",
+      "FORM-COMPLETED": "タスクが完了しました"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "変更したフォームの保存 / 破棄",
+      "SAVE": "保存",
+      "DISCARD": "破棄"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "このプロセスをキャンセルしますか?",
+      "SUB-TITLE": "この操作を行うと、関連するすべてのタスクがキャンセルされま",
+      "ACTION-NO": "いいえ",
+      "ACTION-YES": "はい"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "プロバイダ",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}

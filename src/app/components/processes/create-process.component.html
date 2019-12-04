@@ -1,0 +1,16 @@
+<div class="dw-inner-layout">
+        <adf-toolbar>
+            <adf-toolbar-title>
+                <apw-breadcrumbs></apw-breadcrumbs>
+            </adf-toolbar-title>
+        </adf-toolbar>
+    <div class="dw-inner-layout__content">
+        <adf-start-process
+            [appId]="getAppId()"
+            [name]="defaultProcessName"
+            [processDefinitionName]="defaultProcessDefinitionName"
+            (start)="backFromProcessCreation()"
+            (cancel)="backFromProcessCreation()">
+        </adf-start-process>
+    </div>
+</div>

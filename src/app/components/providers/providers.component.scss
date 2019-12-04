@@ -1,0 +1,10 @@
+@mixin providers-theme($theme) {
+    $primary: map-get($theme, primary);
+
+    .providers {
+        margin-top: 10%;
+        mat-toolbar {
+            background: mat-color($primary) !important;
+        }
+    }
+}

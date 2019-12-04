@@ -1,0 +1,40 @@
+apw-processlist-paginator {
+
+    .process-list-container {
+        height: 100%;
+    }
+    
+    adf-process-instance-list {
+
+        height: 100%;
+        overflow-x: auto;
+    
+        .is-selected {
+            background: #e0f7fa !important;
+        }
+        
+        .adf-data-table {
+
+            .adf-data-table-cell--text {
+                width: 100%;
+            }
+
+            border: none;
+            .adf-datatable-table-cell-header, .adf-datatable-row, .adf-data-table-cell {
+                &:focus {
+                    outline: none !important;
+                }
+            }
+        
+            .ellipsis-cell .cell-container {
+                height: 100%;
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+
+    .adf-pagination__empty {
+        display: none;
+    }
+}

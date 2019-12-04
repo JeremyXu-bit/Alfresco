@@ -1,0 +1,189 @@
+@mixin apw-task-details-container-theme($theme) {
+
+    $primary: map-get($theme, primary);
+
+    .dw-template {
+
+            &-container {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                height: 100%;
+                max-height: 100%;
+            }
+
+            &-content-container {
+                display: flex;
+                flex: 1;
+                background-color: map-get($theme, app-bar);
+                overflow: hidden;
+            }
+
+            &-content {
+                display: flex;
+                flex: 1;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            &-fixed-content {
+                width: 100%;
+                height: 100%;
+            }
+
+            &__sidebar {
+                display: flex;
+                width: 350px;
+                height: 100%;
+                flex-direction: column;
+                border-left: 1px solid rgba(0, 0, 0, 0.07);
+            }
+
+        }
+
+adf {
+        &-people-list {
+            adf-datatable {
+                th {
+                    display: none;
+                }
+
+                .full-width .alfresco-datatable__actions-cell {
+                    padding-right: 0px !important;
+                    padding-left: 0px !important
+                }
+
+                .adf-data-table-cell--text {
+                    padding-left: 12px !important;
+                    padding-right: 8px !important;
+                }
+
+                .cell-container {
+                    display: grid !important;
+                }
+
+                .people-full-name, .people-email {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+            }
+        }
+
+        &-comments {
+            adf-comment-list {
+                adf-datatable {
+                    th {
+                        display: none;
+                    }
+
+                    .adf-data-table-cell--text {
+                        padding-left: 0px !important;
+                        padding-right: 0px !important;
+                    }
+
+                    .adf-comment-contents {
+                        white-space: initial;
+                        word-break: break-all;
+                        width: 180px;
+                        .adf-comment-user-name, .adf-comment-message-time {
+                            width: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .mat-card {
+        padding: 10px 8px !important;
+    }
+
+    apw-task-toolbar .dw-toolbar-title--ellipsis {
+        width: 130px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    apw-task-toolbar .dw-toolbar-title-app-name {
+        display: none !important;
+    }
+}
+
+@media only screen
+  and (max-width: 320px) {
+
+    apw-task-toolbar .dw-toolbar-title--ellipsis {
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    apw-task-toolbar .dw-toolbar-title-app-name {
+        display: none !important;
+    }
+}
+
+@media only screen
+  and (min-width: 321px)
+  and (max-width: 375px) {
+
+    apw-task-toolbar .dw-toolbar-title--ellipsis {
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    apw-task-toolbar .dw-toolbar-title-app-name {
+        display: none !important;
+    }
+}
+
+@media only screen
+  and (min-width: 376px)
+  and (max-width: 425px) {
+
+    apw-task-toolbar .dw-toolbar-title--ellipsis {
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dw-toolbar-title-app-name {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    apw-task-details-container .dw-task-sidebar-drawer {
+        width: 100% !important;
+    }
+
+    apw-task-details-container .dw-template__sidebar{
+        width: 100% !important;
+    }
+
+    apw-task-toolbar adf-toolbar-title .dw-toolbar-title--ellipsis {
+        max-width: 200px !important;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 768px) {
+    apw-task-toolbar adf-toolbar-title .dw-toolbar-title--ellipsis {
+        max-width: 250px !important;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

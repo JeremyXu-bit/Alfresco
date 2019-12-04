@@ -1,0 +1,138 @@
+{
+  "DW-USER-PROFILE": {
+    "MENU": {
+      "SIGN-OUT": "تسجيل خروج",
+      "PROFILE-SETTINGS": "إعدادات ملف التعريف",
+      "ABOUT": "حول",
+      "LANGUAGES": "اللغات"
+    }
+  },
+  "APP": {
+    "ABOUT": {
+      "VERSION": "الإصدار:",
+      "LICENSE": {
+        "TITLE": "الترخيص",
+        "PROPERTY": "الملكية",
+        "VALUE": "القيمة"
+      },
+      "STATUS": {
+        "TITLE": "الحالة",
+        "PROPERTY": "الملكية",
+        "VALUE": "القيمة"
+      },
+      "PACKAGES": {
+        "TITLE": "حزم",
+        "NAME": "الاسم",
+        "VERSION": "الإصدار"
+      }
+    }
+  },
+  "PROCESS-STATISTICS": {
+    "TITLE": "إحصائيات العملية",
+    "COLUMNS": {
+      "ACTIVITY": "نشاط",
+      "ACTIVE-COUNT": "العدد النشط",
+      "ACTIVE-AV-DURATION": "المدة المتوسطة",
+      "COMPLETE-COUNT": "العدد المكتمل",
+      "COMPLETE-AV-DURATION": "المدة المتوسطة"
+    },
+    "MESSAGES": {
+      "TITLE": "لم يتم العثور على لوحة معلومات",
+      "SUBTITLE": "إنشاء لوحة معلومات جديدة تريد عرضها بسهولة"
+    }
+  },
+  "DASHBOARD-SETTINGS": {
+    "TITLE": "إعدادات لوحة المعلومات",
+    "SUBTITLE": "تخصيص لوحة المعلومات",
+    "PROCESS-DEFINITION": "تعريف العملية",
+    "START-DATE": "تاريخ البدء",
+    "END-DATE": "تاريخ الانتهاء",
+    "STATUS": {
+      "LABEL": {
+        "TYPE": "الحالة"
+      },
+      "OPTIONS": {
+        "STATUS-ALL": "الكل",
+        "STATUS-ACTIVE": "نشط",
+        "STATUS-COMPLETE": "تم"
+      }
+    }
+  },
+  "DW-TOOLBAR": {
+    "TITLE": {
+      "ATTACHMENTS": "مرفقات",
+      "NO-NAME": "اسم افتراضي"
+    },
+    "TOOLTIP-INFO": {
+      "TASK-AUDIT": "تدقيق المهمة",
+      "PROCESS-AUDIT": "تدقيق العملية",
+      "CANCEL-PROCESS": "إلغاء العملية",
+      "INFO": "معلومات"
+    }
+  },
+  "DW-MENU": {
+    "BUTTON": {
+      "CREATE": "إنشاء",
+      "NEW-TASK": "مهمة جديدة",
+      "NEW-PROCESS": "عملية جديدة"
+    },
+    "MENU": {
+      "CREATE": "إنشاء",
+      "DASHBOARD": "لوحة معلومات",
+      "TASKS": "المهام",
+      "PROCESSES": "عمليات"
+    }
+  },
+  "DW-BREADCRUMBS": {
+    "ROOT-KEY": "مساحة عمل",
+    "ACTION-INFO-TOOLTIP": "معلومات",
+    "ENTRY-PROCESSES": "عمليات",
+    "ENTRY-TASKS": "المهام",
+    "ENTRY-DASHBOARD": "لوحة معلومات",
+    "ENTRY-NEW-TASK": "مهمة جديدة",
+    "ENTRY-NEW-PROCESS": "عملية جديدة"
+  },
+  "DW-HEADER": {
+    "APPS-DESKTOP": "مساحة عمل Alfresco Process Services",
+    "APPS-TABLETS": "مساحة عمل Process Services",
+    "APPS-MOBILES": "مساحة عمل"
+  },
+  "DW-PROCESS-FORM": {
+    "DEFAULT-PROCESS-FILTER": "قيد التشغيل"
+  },
+  "DW-TASK-FORM": {
+    "DEFAULT-TASK-FILTER": "مهامي",
+    "NO-FORM-MESSAGE": "لا توجد نماذج مرفقة",
+    "COMPLETE-TASK-MESSAGE": "اكتملت المهمة {{taskName}}",
+    "COMPLETE-TASK-SUB-MESSAGE": "لا توجد نماذج لإضافتها",
+    "BUTTON": {
+      "COMPLETE": "تم",
+      "CANCEL": "إلغاء"
+    },
+    "OPERATIONS": {
+      "FORM-SAVED": "تم حفظ النموذج بنجاح",
+      "FORM-ATTACH": "تم إرفاق النموذج بنجاح",
+      "FORM-UPDATE": "تم تحديث النموذج بنجاح",
+      "FORM-ERROR": "تعذر إرفاق النموذج",
+      "FORM-COMPLETED": "تم إتمام المهمة"
+    }
+  },
+  "DW-DIALOG": {
+    "TASK-DIALOG": {
+      "TITLE": "حفظ النموذج المعدل أو تجاهله",
+      "SAVE": "حفظ",
+      "DISCARD": "تجاهل"
+    },
+    "PROCESS-DIALOG": {
+      "TITLE": "هل أنت متأكد أنك تريد إلغاء العملية؟",
+      "SUB-TITLE": "سيعمل هذا على إلغاء جميع المهام ذات الصلة",
+      "ACTION-NO": "لا",
+      "ACTION-YES": "نعم"
+    }
+  },
+  "PROVIDERS": {
+    "TITLE": "الموفرون",
+    "CONTENT-SERVICES": "Content Services",
+    "PROCESS-SERVICES": "Process Services"
+  }
+}
